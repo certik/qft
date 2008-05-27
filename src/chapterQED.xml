@@ -1,0 +1,556 @@
+    <section>
+        <title>Derivation from QED</title>
+
+        <section>
+            <title>Introduction</title>
+            <p>
+The correct theory for electrons is the quantum electrodynamics (QED). Thus all
+the equations which we are going to use, follow from the QED and this chapter
+is devoted for their derivation. The standard nonrelativistic quantum
+mechanics (QM)
+contains a lot of ad-hoc assumptions (Schr&ouml;dinger equation, electromagnetic
+coupling, spin, etc.), that cannot be satisfactorily explained. It is true that
+the whole nonrelativistic QM can be derived from a small set of
+assumptions (mostly commutation relations and some particular form of QM
+operators like spin), but it is not at all clear why these assumptions look the
+way they look. The QM is a set of rules which are known to work quite
+well, but obviously, we are not interested in postulating correct forms of
+operators or commutation relations, we want a better explanation, if there is
+one. And fortunately, there is.
+</p>
+<p>
+The correct theory so far is the Standard Model and in our case of electron
+structure calculations, all phenomena are explained by the QED. There are still
+some problems in the Standard Model, but for much higher energies than
+we deal with in the electron structure. Thus what we do is that we take
+the most complete theory so far (QED) and derive everything from it. Of course,
+because we are dealing with low energies and to ease calculations, we make a
+lot of approximations on our way, but this is the only correct way to
+proceed, because it will be clear that we make each approximation because of
+this and that. If it turns out our results are not in agreement with experiment
+(for example the Schr&ouml;dinger equation is imprecise), we need to neglect
+less things. 
+</p>
+<p>
+As you will see, this chapter is not long, so there really is no excuse of
+doing things differently (maybe in 1940s, but certainly not now when we have
+the QED). 
+</p>
+<p>
+There is one argument to be made though. As you will see, we will not get any
+new equations by deriving everything from firt principles from QED. We
+sometimes get a deeper understanding, however, from the practical point of
+view, it is not necessary to do that. There are logical problems even in QED or
+the Standard Model and noone really knows what are the correct equations,
+because we simply don't have enough experiments. The higher the energy we go,
+let's say up to the QED, the more fundamental theory we get, however, also the
+less experiments we have and thus some logical steps are just plain hand
+waving, because there is a whole bunch of ways how to continue, so we chose the
+one which we like, or which is the mathematically simplest. Contrary, in the
+low energy regime, like the classic quantum mechanics, the equations are very
+well known and there is really no other option. On the other hand, the theory
+doesn't explain us "why". So deriving everything from QED answers the "why",
+but creates some more fundamental questions, but those needn't concern us,
+because for our energy scale, everything works very nice.
+</p>
+</section>
+<section>
+<title>QED</title>
+<p>
+The QED Lagrangian density is
+<e>\L=\bar\psi(ic\gamma^\mu D_\mu-mc^2)\psi-{1\over4}F_{\mu\nu}F^{\mu\nu}</e>
+where
+<e>\psi=\left(\matrix{\psi_1\psi_2\psi_3\psi_4}\right) </e>
+and
+<e>D_\mu=\partial_\mu+ieA_\mu</e>
+is the gauge covariant derivative and (<m>e</m> is the elementary charge, which is
+<m>1</m> in atomic units)
+<e>F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu</e>
+is the electromagnetic field tensor. It's astonishing, that this simple
+Lagrangian can account for all phenomena from macroscopic scales down to
+something like <m>10^{-13}\rm\,cm</m>. So of course Feynman, Schwinger and Tomonaga
+received the 1965 Nobel Prize in Physics for such a fantastic achievement.
+</p>
+<p>
+Plugging this Lagrangian into the Euler-Lagrange equation of motion for a
+field, we get:
+<e>(ic\gamma^\mu D_\mu-mc^2)\psi=0</e>
+<e>\partial_\nu F^{\nu\mu}=-ec\bar\psi\gamma^\mu\psi</e>
+The first equation is the Dirac equation in the electromagnetic field and
+the second equation is a set of Maxwell equations (<m>\partial_\nu
+F^{\nu\mu}=-ej^\mu</m>) with a source <m>j^\mu=c\bar\psi\gamma^\mu\psi</m>, which is a
+4-current comming from the Dirac equation.
+</p>
+<p>
+The fields <m>\psi</m> and <m>A^\mu</m> are quantized. The first approximation is that we
+take <m>\psi</m> as a wavefunction, that is, it is a classical 4-component field. It
+can be shown that this corresponds to taking three orders in the perturbation
+theory.
+</p>
+<p>
+The first component <m>A_0</m> of the 4-potential is the electric potential, and
+because this is the potential that (as we show in a moment) is in the
+Schr&ouml;dinger equation, we denote it by <m>V</m>:
+<e>A_\mu=\left({V\over ec},A_1,A_2,A_3\right)</e>
+So in the non-relativistic limit, the <m>V\over e</m> corresponds to the electric
+potential.  We multiply the Dirac equation by <m>\gamma^0</m> from left to get:
+<e>0=\gamma^0(ic\gamma^\mu D_\mu-mc^2)\psi=
+\gamma^0(ic\gamma^0(\partial_0+i{V\over c})+ic\gamma^i
+(\partial_i+ieA_i)-mc^2)\psi=</e>
+<e>=
+(ic\partial_0+ic\gamma^0\gamma^i\partial_i-\gamma^0mc^2-V
+-ce\gamma^0\gamma^iA_i)\psi
+</e>
+and we make the following substitutions (it's just a formalism, nothing more):
+<m>\beta=\gamma^0</m>, <m>\alpha^i=\gamma^0\gamma^i</m>, <m>p_j=-i\partial_j</m>,
+<m>\partial_0={1\over c}{\partial\over\partial t}</m>
+to get
+<e>(i{\partial\over\partial t}-c\alpha^i p_i-\beta
+mc^2-V-ce\alpha^iA_i)\psi=0\,.</e>
+This, in most solid state physics texts, is usually written as
+<e> i{\partial\psi\over\partial t}=H\psi\,,</e>
+where the Hamiltonian is given by
+<e> H=c\alpha^i(p_i+eA_i)+\beta mc^2+V\,.</e>
+</p>
+<p>
+The right hand side of the Maxwell equations is the 4-current, so it's given
+by:
+<e>j^\mu=c\bar\psi\gamma^\mu\psi</e>
+Now we make the substitution <m>\psi=e^{-imc^2t}\varphi</m>, which states, that we
+separate the largest oscillations of the wavefunction and we get
+<e>j^0=c\bar\psi\gamma^0\psi=c\psi^\dagger\psi=c\varphi^\dagger\varphi</e>
+<e>j^i=c\bar\psi\gamma^i\psi=c\psi^\dagger\alpha^i\psi=c\varphi^\dagger\alpha^i\varphi</e>
+The Dirac equation implies the Klein-Gordon equation:
+<e>(-ic\gamma^\mu D_\mu-mc^2)(ic\gamma^\nu D_\nu-mc^2)\psi=
+(c^2\gamma^\mu\gamma^\nu D_\mu D_\mu+m^2c^4)\psi=
+</e>
+<e>
+=(c^2D^\mu D_\mu-ic^2[\gamma^\mu,\gamma^\nu]D_\mu D_\nu+m^2c^4)\psi=0</e>
+Note however, the <m>\psi</m> in the true Klein-Gordon equation is just a scalar,
+but here we get a 4-component spinor. Now:
+<e>
+D_\mu D_\nu = (\partial_\mu+ieA_\mu)(\partial_\nu+ieA_\nu)=
+\partial_\mu\partial_\nu+ie(A_\mu\partial_\nu+A_\nu\partial_\mu+
+(\partial_\mu A_\nu))-e^2A_\mu A_\nu
+</e>
+<e>[D_\mu, D_\nu] = D_\mu D_\nu-D_\nu D_\mu=ie(\partial_\mu A_\nu)-
+ie(\partial_\nu A_\mu)</e>
+We rewrite <m>D^\mu D_\mu</m>:
+<e>D^\mu D_\mu=g^{\mu\nu}D_\mu D_\nu=
+\partial^\mu\partial_\mu+ie((\partial^\mu
+A_\mu)+2A^\mu\partial_\mu) -e^2A^\mu A_\mu=</e>
+<e>=\partial^\mu\partial_\mu+
+ie((\partial^0 A_0)+2A^0\partial_0+(\partial^i A_i)+2A^i\partial_i)
+-e^2(A^0A_0+A^i A_i)=</e>
+<e>=\partial^\mu\partial_\mu
++i{1\over c^2}{\partial V\over\partial t}+
+2i{V\over c^2}{\partial\over\partial t}
++ie(\partial^i A_i)+2ieA^i\partial_i
+ -{V^2\over c^2}-e^2A^iA_i</e>
+</p>
+<p>
+We use the identity
+<m>{\partial\over\partial t}\left(e^{-imc^2t}f(t)\right)=
+e^{-imc^2t}(-imc^2+{\partial\over\partial t})f(t)</m> to get:
+</p>
+<p>
+<e>L=c^2\partial^\mu\psi^*\partial_\mu\psi-m^2c^4\psi^*\psi=
+{\partial\over\partial t}\psi^*{\partial\over\partial t}\psi
+-c^2\partial^i\psi^*\partial_i\psi-m^2c^4\psi^*\psi=</e>
+<e>=(imc^2+{\partial\over\partial t})\varphi^*
+(-imc^2+{\partial\over\partial t})\varphi
+-c^2\partial^i\varphi^*\partial_i\varphi-m^2c^4\varphi^*\varphi=</e>
+<e>=2mc^2\left[{1\over2}i(\varphi^*{\partial\varphi\over\partial t}-
+\varphi{\partial\varphi^*\over\partial t})-
+{1\over2m}\partial^i\varphi^*\partial_i\varphi
++{1\over2mc^2}{\partial\varphi^*\over\partial t}
+{\partial\varphi\over\partial t}\right]</e>
+The constant factor <m>2mc^2</m> in front of the Lagrangian is of course irrelevant,
+so we drop it and then we take the limit <m>c\to\infty</m> (neglecting the last
+term) and we get
+<e>L={1\over2}i(\varphi^*{\partial\varphi\over\partial t}-
+\varphi{\partial\varphi^*\over\partial t})-
+{1\over2m}\partial^i\varphi^*\partial_i\varphi
+</e>
+After integration by parts we arrive at
+<e>L=i\varphi^*{\partial\varphi\over\partial t}
+-{1\over 2m}\partial^i\varphi^*\partial_i
+\varphi</e>
+The nonrelativistic limit can also be applied directly to the Klein-Gordon equation:
+<e>0=(c^2D^\mu D_\mu+m^2c^4)\psi=</e>
+<e>=\left(
+c^2\partial^\mu\partial_\mu
++i{\partial V\over\partial t}
++2iV{\partial\over\partial t}
++iec^2(\partial^i A_i)
++2iec^2A^i\partial_i
+-V^2
+-e^2c^2A^iA_i
++m^2c^4
+\right)e^{-imc^2t}\varphi=
+</e>
+<e>=\left(
+{\partial^2\over\partial t^2}
+-c^2\nabla^2
++2iV{\partial\over\partial t}
++i{\partial V\over\partial t}
++iec^2(\partial^i A_i)
++2iec^2A^i\partial_i
+-V^2
+-e^2c^2A^iA_i
++m^2c^4
+\right)e^{-imc^2t}\varphi=
+</e>
+<e>=e^{-imc^2t}\left(
+(-imc^2+{\partial\over\partial t})^2
+-c^2\nabla^2
++2iV(-imc^2+{\partial\over\partial t})
++i{\partial V\over\partial t}
++iec^2(\partial^i A_i)
++2iec^2A^i\partial_i
+-V^2+ \right.
+</e>
+<e>\left.
+-e^2c^2A^iA_i
++m^2c^4
+\right)\varphi=
+</e>
+<e>=e^{-imc^2t}\left(
+-2imc^2{\partial\over\partial t}+{\partial^2\over\partial t^2}
+-c^2\nabla^2
++2Vmc^2
++2iV{\partial\over\partial t}
++i{\partial V\over\partial t}
++iec^2(\partial^i A_i)
++2iec^2A^i\partial_i
+-V^2+ \right.
+</e>
+<e>\left.
+-e^2c^2A^iA_i
+\right)\varphi=
+</e>
+<e>=
+-2mc^2 e^{-imc^2 t} \left(i{\partial\over\partial t}+{\nabla^2\over2m}-V
+-{1\over2mc^2}{\partial^2\over\partial t^2}-{i\over2mc^2}{\partial
+V\over\partial t}+{V^2\over2mc^2}-{iV\over mc^2}{\partial\over\partial
+t}+\right.</e>
+<e>\left.-{ie\over2m}\partial^i A_i-{ie\over
+m}A^i\partial_i+{e^2\over2m}A^iA_i\right)\varphi
+</e>
+Taking the limit <m>c\to\infty</m> we again recover the Schr&ouml;dinger equation:
+<e>i{\partial\over\partial t}\varphi=\left(-{\nabla^2\over2
+m}+V
++{ie\over2m}\partial^i A_i
++{ie\over m}A^i\partial_i
+-{e^2\over2m}A^iA_i
+\right)\varphi\,,</e>
+we rewrite the right hand side a little bit:
+<e>i{\partial\over\partial t}\varphi=\left({1\over2 m}
+(\partial^i\partial_i
++ie\partial^i A_i
++2ieA^i\partial_i
+-e^2A^iA_i
+)
++V
+\right)\varphi\,,</e>
+<e>i{\partial\over\partial t}\varphi=\left({1\over2 m}
+(\partial^i+ieA^i)(\partial_i+ieA_i)
++V
+\right)\varphi\,,</e>
+And we get the usual form of the Schr&ouml;dinger equation for the vector
+potential <m>{\bf A}=(A_1, A_2, A_3)</m>:
+<e>i{\partial\over\partial t}\varphi=\left(-{(\nabla+ie{\bf A})^2\over2 m}
++V \right)\varphi\,.</e>
+</p>
+</section>
+<section>
+    <title>Radial Schr&ouml;dinger and Dirac Equations</title>
+<p>
+For general treatment, together with derivation of all the different forms of
+radial Dirac equations used in the literature, see \cite{bachelor-thesis}. Here
+we just summarize the results.
+</p>
+</section>
+<section>
+    <title>Radial Schr&ouml;dinger Equation</title>
+<p>
+We have a spherically symmetric potential energy
+<e>V({\bf x})=V(r)\,.</e>
+State with a given square of an angular momentum (eigenvalue
+<m>l(l+1)</m>) and its <m>z</m> component (eigenvalue <m>m</m>) is described by the wave
+function
+<e id="psi">\psi_{nlm}({\bf x})=R_{nl}(r)\,Y_{lm}\left({\bf x}\over r\right)\,,</e>
+where <m>R_{nl}(r)</m> obeys the equation \cite{formanek} (eq. 2.400)
+<e id="radial">R_{nl}''+{2\over r}R_{nl}'+{2M\over\hbar^2}(E-V)R_{nl}-
+{l(l+1)\over r^2}R_{nl}=0\,.</e>
+This is called the radial Schr&ouml;dinger equation which
+we want to solve numerically.
+</p>
+</section>
+<section>
+    <title>Numerical integration for a given <m>E</m></title>
+<p>
+    Equation <a ref="radial"/> is the linear ordinary differential equation of the second
+order, so the general solution is a linear combination of two independent
+solutions. Normally, the <m>2</m> constants are determined from initial and/or
+boundary conditions. In our case, however, we don't have any other condition
+besides being interested in solutions that we can integrate on the interval
+<m>(0,\infty)</m> (and which are normalizable), more exactly we want
+<m>R\in L^2</m> and <m>\int_0^\infty r^2R^2\,\d r=1</m>. 
+</p>
+<p>
+It can be easily shown by a direct substitution, that there are only two
+asymptotic behaviors near the origin: <m>r^l</m> and <m>r^{-l-1}</m>. We are interested
+in quadratic integrable solutions only, so we are left with <m>r^l</m>
+and only one integration constant, which we calculate from a normalization.
+This determines the solution uniquely.
+</p>
+<p>
+All the integration algorithms needs to evaluate <m>R''</m>, which is a
+problem at the origin, where all the terms in the equation are infinite,
+although their sum is finite. We thus start to integrate the equation at some
+small <m>r_0</m> (for example <m>r_0=10^{-10}\rm\,a.u.</m>), where all the terms in the
+equation are finite. If we find the initial conditions <m>R(r_0)</m> and
+<m>R'(r_0)</m>, the solution is then fully determined.
+</p>
+<p>
+If <m>r_0</m> is sufficiently small, we can set <m>R(r_0)=r_0^l</m> and
+<m>R'(r_0)=lr_0^{l-1}</m>. In the case <m>l=0</m> we need to set <m>R(r_0)=1</m> and
+<m>R'(r_0)=-{1\over a}</m>, where <m>a</m> is the Bohr radius, see the next
+section for more details.
+</p>
+<p>
+So when somebody gives us <m>l</m> and <m>E</m>, we are now able to compute the solution
+up to the the multiplicative constant that is later determined from a
+normalization. As was already mentioned, we used the fourth-order Runge-Kutta
+method that proved very suitable for this problem. 
+</p>
+</section>
+<section>
+    <title>Asymptotic behavior</title>
+<p>
+The asymptotic behavior is important for the integration routine to find
+the correct solution for a given <m>E</m>. 
+It is well known, that the first
+term of the Taylor series of the solution is <m>r^l</m>, independent
+of the potential \cite{formanek} (eq. 2.408). This is enough
+information to find the correct solution for <m>l>0</m> because the only
+thing we need to know is the value of the wave function and its derivative
+near the origin, which is effectively <m>r_0^l</m> and <m>lr_0^{l-1}</m> for some small
+<m>r_0</m>. The problem is with <m>l=0</m>, where the
+derivative cannot be calculated just from <m>l</m> and <m>r_0</m>. 
+</p>
+<p>
+The asymptotic behavior for <m>l=0</m> depends on the potential <m>V</m>, so we need to
+take into account it's properties. We assume <m>V</m> to be of a form:
+<e>V=-{Z\over r}+v_0 + v_1r + O(r^2)\,,</e>
+It can be shown, that the solution is then
+<e>R=a_0(1-{r\over a}+O(r^2))\,,</e>
+where <m>a={\hbar^2\over ZM}</m> is the Bohr radius and <m>a_0</m> is a normalization
+constant. So the initial condition for the integration for <m>l=0</m> is <m>R(r_0)=1</m>
+and
+<m>R'(r_0)=-{1\over a}</m>.
+</p>
+</section>
+<section>
+    <title>Dirac Equation</title>
+<p>
+The Dirac equation for one particle is \cite{strange,zabloudil}:
+<e id="diraceq">H\psi=W\psi\,,</e>
+<e>H=c\balpha\cdot{\bf p}+\beta mc^2+V(r)\hbox{\dsrom1}\,,</e>
+where <m>\psi</m> is a four component vector:
+<e>\psi=\left(\matrix{\psi_1\psi_2\psi_3\psi_4}\right)
+=\col{\psi_A}{\psi_B}\,,\qquad
+\psi_A=\col{\psi_1}{\psi_2}\!,\,\psi_B=\col{\psi_3}{\psi_4}</e>
+and <m>\balpha</m>, <m>\beta</m> are <m>4\times4</m> matrices:
+<e>\balpha=\mat{0}{\bsigma}{\bsigma}{0}\,,</e>
+<e>\beta=\mat{\hbox{\dsrom1}}{0}{0}{-\hbox{\dsrom1}}\,,</e>
+where the Pauli matrices <m>\bsigma=(\sigma_x,\sigma_y,\sigma_z)</m> and
+<m>\hbox{\dsrom1}</m> form a basis of all <m>2\times2</m> Hermitian matrices.
+To derive a continuity equation, we multiply <a ref="diraceq"/> by <m>\psi^*</m>
+and subtract the conjugate transpose of <a ref="diraceq"/> multiplied by <m>\psi</m>:
+<e>\p{}{t}(\psi^*\psi)=-\nabla\cdot(c\psi^*\balpha\psi)\,,</e>
+so we identify the probability and current densities as
+<e>\rho=\psi^*\psi=\psi_1^*\psi_1+\psi_2^*\psi_2+\psi_3^*\psi_3+\psi_4^*\psi_4\,,
+\qquad {\bf j}=c\psi^*\balpha\psi\,.</e>
+The normalization of a four-component wave function is then
+<e id="norm">
+\int \rho \,\d^3x=
+\int \psi^*\psi \,\d^3x=
+\int \psi_1^*\psi_1+\psi_2^*\psi_2+\psi_3^*\psi_3+\psi_4^*\psi_4 \,\d^3x=
+1\,.</e>
+The probability density <m>\rho(x,y,z)</m> is the physical quantity we are
+interested in, and all the four-component wavefunctions and other formalism is
+just a way of calculating it. This <m>\rho</m> is also the thing we should compare
+with the Schr&ouml;dinger equation. 
+</p>
+</section>
+<section>
+    <title>Radial Dirac equation</title>
+<p>
+We and search for a basis in the form of spin angular functions:
+<e id="psia">\psi_A=g\chi^{j_3}_{\kappa}\,,</e>
+<e id="psib">\psi_B=if\chi^{j_3}_{-\kappa}\,.</e>
+Substituting all of these into <a ref="diraceq"/> and some more well-known
+manipulations one gets:
+<e id="radialdirac">\hbar c
+\col{-\p{f}{r}+{\kappa-1\over r}f}
+{\p{g}{r}+{\kappa+1\over r}g}=
+\col{(W-V-mc^2)g}{(W-V+mc^2)f}\,.</e>
+This is the radial Dirac equation. As we shall see in the next section, the
+equation for <m>g</m> is (with the exception of a few relativistic corrections)
+identical to the radial Schr&ouml;dinger equation. And <m>f</m> vanishes
+in the limit <m>c\to\infty</m>. For this reason <m>f</m> is called the small 
+(fein, minor) component and <m>g</m> the large (gro&ssharp;, major) component. 
+</p>
+<p>
+The probability density is
+<e>\rho=\psi^*\psi=\psi^*_A\psi_A+\psi^*_B\psi_B=
+f^2\chi^{j_3*}_{-\kappa}\chi^{j_3}_{-\kappa}+
+g^2\chi^{j_3*}_{\kappa}\chi^{j_3}_{\kappa}\,,
+</e>
+so from the normalization condition <a ref="norm"/> we get
+<e>
+\int \rho \,\d^3x=
+\int f^2\chi^{j_3*}_{-\kappa}\chi^{j_3}_{-\kappa}+
+g^2\chi^{j_3*}_{\kappa}\chi^{j_3}_{\kappa} \,\d^3x=
+\int (f^2\chi^{j_3*}_{-\kappa}\chi^{j_3}_{-\kappa}+
+g^2\chi^{j_3*}_{\kappa}\chi^{j_3}_{\kappa})\,r^2\,\d r\d\Omega=
+</e>
+<e>
+=\int_0^\infty f^2r^2\,\d r\int\chi^{j_3*}_{-\kappa}\chi^{j_3}_{-\kappa}
+\,\d\Omega+
+\int_0^\infty g^2r^2\,\d r\int\chi^{j_3*}_{\kappa}\chi^{j_3}_{\kappa}
+\,\d\Omega=
+\int_0^\infty r^2(f^2+g^2)\,\d r=1\,,
+</e>
+where we used the normalization of spin-angular functions.
+Also it can be seen, that the radial probability density
+is 
+<e id="radialrho">\rho(r)=r^2(f^2+g^2)</e>
+(i.e., the probability to find the electron
+between <m>r_1</m> and <m>r_2</m> is <m>\int_{r_1}^{r_2}r^2(f^2+g^2)\,\d r</m>). 
+The result of integrating the radial
+Dirac equation are the two functions <m>f</m> and <m>g</m>, but the
+physically relevant quantity is the radial probability density <a
+    ref="radialrho"/>.
+In the 
+nonrelativistic case, the density is given by
+<e>\rho(r)=r^2R^2\,,</e>
+so the correspondence between the Schr&ouml;dinger and Dirac equation is 
+<m>R^2=f^2+g^2</m>. 
+</p>
+<p>
+For numerical stability and robustness, we are not solving the equations in the
+form <a ref="radialdirac"/>, but a sligthly rearranged ones. Let's use Hartree
+atomic units (<m>m=\hbar=1</m>) and define <m>E=W-mc^2=W-c^2</m>, so that <m>E</m> doesn't
+contain the electron rest mass energy. 
+Let's make the substitution \cite{donald:apw}
+<e>P_\kappa=rg_\kappa\,,</e>
+<e>Q_\kappa=rf_\kappa</e>
+and plug all of this into <a ref="radialdirac"/>. After a little manipulation we
+get:
+<e>
+{\d P_\kappa\over\d r}=-{\kappa\over r}P_\kappa+\left[{E-V\over
+c}+2c\right]Q_k\,,</e>
+<e id="radialdirac2">{\d Q_\kappa\over\d r}={\kappa\over r}Q_\kappa-{1\over c}(E-V)P_k\,,</e>
+which can be found in \cite{zabloudil} (eq. 8.12 and 8.13), where they have one
+<m>c</m>
+hidden in <m>Q_\kappa=crf_\kappa</m> and use Rydberg atomic units, so they have <m>1</m> instead of <m>2</m> in the square bracket.
+It can be found in \cite{bachelet} as well, they use Hartree atomic units, but
+have a different notation <m>G_\kappa\equiv P_\kappa</m> and <m>F_\kappa\equiv
+Q_\kappa</m>, also they made a substitution <m>c={1\over\alpha}</m>.
+</p>
+</section>
+<section>
+    <title>Asymptotic behavior</title>
+<p>
+We calculate the functions <m>f_\kappa</m> and <m>g_\kappa</m> in a similar
+way as we calculated <m>R</m> for the Schr&ouml;dinger equation, thus we 
+need the asymptotic behavior at the origin. The potential
+can always be treated as <m>V=1/r+\cdots</m> and in this case 
+it can be shown \cite{zabloudil}, that the asymptotic is 
+<e>P_\kappa = r g_\kappa=r^{\beta}\,,</e>
+<e>Q_\kappa = r f_\kappa=r^{\beta-1}{\beta+\kappa\over{E-V\over c}+2c}\,,</e>
+where 
+<e id="diracasymptotic">\beta=\sqrt{\kappa^2-\left(Z\over c\right)^2}\,,</e>
+or, if we write it explicitly, for <m>j=l+\half</m>
+<e>\beta^+=\sqrt{(-l-1)^2-\left(Z\over c\right)^2}</e>
+and <m>j=l-\half</m>
+<e>\beta^-=\sqrt{l^2-\left(Z\over c\right)^2}\,.</e>
+In the semirelativistic case (which is an approximation --- we neglect
+the spin-orbit coupling term) we choose
+<e>\beta=\sqrt{\half(|\beta^+|^2+|\beta^-|^2)}=
+\sqrt{l^2+l+\half-\left(Z\over c\right)^2}\,.</e>
+It should be noted that in the literature we can find other types of 
+aymptotic behaviour for the semirelativistic case, its just a question of the
+used approximation. One can hardly say that some of them are correct and
+another is not since the semirelativistic (sometimes denoted as
+scalar-relativstic) approximation itself is not correct, it's just an
+approximation.
+</p>
+<p>
+    It follows from <a ref="diracasymptotic"/> that for <m>j=l+\half</m> the radial Dirac
+equation completely becomes the radial Schr&ouml;dinger equation in the limit
+<m>c\to\infty</m> (and gives exactly the same solutions):
+<e>P_\kappa = r g_\kappa \to r^{l+1}\,,</e>
+<e>Q_\kappa = r f_\kappa \to 0\,.</e>
+For <m>j=l-\half</m> however, 
+we get a wrong asymptotic: we get a radial Schr&ouml;dinger equation for <m>l</m>, but
+the asymptotic for <m>l-1</m>.
+</p>
+</section>
+<section>
+    <title>Eigenproblem</title>
+<p>
+In the previous sections, we learned how to calculate the solution of both
+the radial Schr&ouml;dinger and Dirac equations for a given <m>E</m>.  For most of the
+energies, however, the solution for <m>r\to\infty</m> exponentially diverges to
+<m>\pm\infty</m>. Only for the energies equal to eigenvalues, the solution tends
+exponentially to zero for <m>r\to\infty</m>. The spectrum for bounded states is
+discrete, so we label the energies by <m>n</m>, starting from <m>1</m>. 
+</p>
+<p>
+We want to find the eigenvalue and eigenfunction for a given <m>n</m> and <m>l</m>
+(and a spin in the relativistic case).
+The algorithm is the same for both nonrelativistic and relativistic case and
+is based on two facts, first that the number of nodes (ie. the number of
+intersections with the <m>x</m> axis, not counting the one at the origin and in the
+infinity) of <m>R_{nl}</m> and <m>g_\kappa</m> is <m>n-l-1</m> and second that the solution
+must tend to zero at infinity.
+</p>
+<p>
+We calculate the solution for some (random) energy <m>E_0</m>, using the
+procedure described above. Then we count the number of nodes 
+(for diverging solutions, we don't count the last one) and check, if the
+solution is approaching the zero from top or bottom in the infinity. From the
+number of nodes and the direction it is approaching the zero it can be
+determined
+whether the energy <m>E_0</m> is below or above the eigenvalue <m>E</m> belonging to a given
+<m>n</m> and <m>l</m>. The rest is simple, we find two energies, one below <m>E</m>, one above
+<m>E</m> and by bisecting the interval we calculate <m>E</m> with any precision we want.
+</p>
+<p>
+There are a few technical numerical problems that are unimportant from the
+theoretical point of view, but that need to be solved if one attempts to
+actually implement this algorithm. One of them is that when the algorithm
+(described in the previous paragraph) finishes, because the energy interval is
+sufficiently small, it doesn't mean
+the solution is near zero for the biggest <m>r</m> of our grid.
+Remember, the solution goes exponentially to <m>\pm\infty</m> for every <m>E</m> except
+the eigenvalues and because we never find the exact eigenvalue, the solution
+will (at some point) diverge from zero. 
+</p>
+<p>
+Possible solution that we have employed is as follows: 
+when the algorithm finishes we find the last minimum (which is always near
+zero) and trim the solution behind it (set it to zero). 
+</p>
+<p>
+The second rather technical problem is how to choose the initial interval of
+energies so that the eigenvalue lies inside the interval. We use some default
+values that work for atomic calculations, while allowing the user to override
+it if needed. 
+            </p>
+        </section>
+    </section>

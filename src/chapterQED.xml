@@ -39,8 +39,13 @@ added to <m>A^a_\mu</m> so we can set <m>\pi_a = 0</m> now.
 
 <section>
     <title>Higgs Terms</title>
-Plugging in the <m>\Phi</m> in U-gauge:
-<e>\L_{Higgs} = \Phi^+(\overleftarrow\partial_\mu+igA^a_\mu {\tau^a\over 2} + ig'YB_\mu)
+<e>\L_{Higgs}=
+\half \partial_\mu\Phi^*\partial^\mu\Phi-m^2\Phi^*\Phi-{1\over4}
+\lambda(\Phi^*\Phi)^2
+</e>
+Plugging in the covariant derivatives and <m>\Phi</m> in
+U-gauge (symmetry breaking):
+<e>\L_{Higgs} = {1\over2}\Phi^+(\overleftarrow\partial_\mu+igA^a_\mu {\tau^a\over 2} + ig'YB_\mu)
     (\overrightarrow\partial^\mu+igA^{a\mu} {\tau^a\over 2} + ig'YB^\mu)\Phi
     -\lambda(\Phi^+\Phi-{v^2\over2})^2=
 </e>
@@ -77,15 +82,15 @@ Where we put
 <e>W^{\pm}_\mu = {1\over\sqrt2}(A^1_\mu \mp iA^2_\mu)</e>
 <e>Z_\mu = {g\over\sqrt{g^2+4Y^2g'^2}}A^3_\mu-
     {2Yg'\over\sqrt{g^2+4Y^2g'^2}}B_\mu</e>
-By defining <m>\theta_W</m> by the relation
+Now we define <m>\theta_W</m> by the relation
 <e>\cos\theta_W = {g\over\sqrt{g^2+4Y^2g'^2}}</e>
-we can then write:
+so that we can then write:
 <e>Z_\mu= \cos\theta_W A^3_\mu - \sin\theta_W B_\mu</e>
 </section>
 <section>
     <title>Yukawa terms</title>
-<e>\L_{Yukawa} = -h_l \bar L \Phi e_R + \hbox{h.c.}=
--h_l \bar L \Phi_U e_R + \hbox{h.c.}=</e>
+<e>\L_{Yukawa} = -h_l \bar L \Phi e_R - \hbox{h.c.}=
+-h_l \bar L \Phi_U e_R - \hbox{h.c.}=</e>
 <e>=-{1\over\sqrt2}h_l(v+H)(\bar e_L e_R + \bar e_R e_L)=
 -{1\over\sqrt2}h_l(v+H)\bar ee=</e>
 <e>=-{1\over\sqrt2}h_lv\bar ee-{1\over\sqrt2}h_l\bar eeH</e>

@@ -98,7 +98,55 @@ so that we can then write:
 <section>
     <title>Gauge terms</title>
 <e>\L_{Gauge} = -{1\over4}F^a_{\mu\nu}F^{a\mu\nu}
-    -{1\over4}B_{\mu\nu}B^{\mu\nu}</e>
+    -{1\over4}B_{\mu\nu}B^{\mu\nu}=</e>
+<e> = -{1\over4}(\partial_\mu A^a_\nu-\partial_\nu A^a_\mu+g\epsilon^{abc}
+    A^b_\mu A^c_\nu)(\partial^\mu A^{a\nu}-\partial^\nu A^{a\mu}+g\epsilon^{ajk}
+    A^{j\mu} A^{k\nu})
+    -{1\over4}B_{\mu\nu}B^{\mu\nu}=</e>
+<e> = -{1\over4}\partial_\mu A^a_\nu\partial^\mu A^{a\nu}
+    -{1\over4}B_{\mu\nu}B^{\mu\nu}
+    -{1\over2}(\partial_\mu A^a_\nu-\partial_\nu A^a_\mu)g\epsilon^{abc}
+    A^{b\mu} A^{c\nu}
+    -{1\over4}g^2\epsilon^{abc}\epsilon^{ajk}A^b_\mu A^c_\nu A^{k\mu} A^{l\nu}
+    =
+</e>
+<e> =
+-{1\over2}W^-_{\mu\nu}W^{+\mu\nu}
+-{1\over4}A_{\mu\nu}A^{\mu\nu}
+-{1\over4}Z_{\mu\nu}Z^{\mu\nu}
+-g[(\partial_\mu A^1_\nu-\partial_\nu A^1_\mu)A^{2\mu}A^{3\nu}+
+\hbox{cycl. perm. (123)}]
+</e>
+<e>
+-{1\over4}g^2[(A^a_\mu A^{a\mu})(A^b_\nu A^{b\nu})-
+(A^a_\mu A^a_\nu)(A^{b\mu} A^{b\nu})]=
+</e>
+<e> =
+-{1\over2}W^-_{\mu\nu}W^{+\mu\nu}
+-{1\over4}A_{\mu\nu}A^{\mu\nu}
+-{1\over4}Z_{\mu\nu}Z^{\mu\nu}
+-g[A^1_\mu A^2_\nu \overleftrightarrow\partial^\mu A^{3\nu}+ \hbox{cycl. perm. (123)}]
+</e>
+<e>
+-{1\over4}g^2[(A^a_\mu A^{a\mu})(A^b_\nu A^{b\nu})-
+(A^a_\mu A^a_\nu)(A^{b\mu} A^{b\nu})] =
+</e>
+<e> =
+-{1\over2}W^-_{\mu\nu}W^{+\mu\nu}
+-{1\over4}A_{\mu\nu}A^{\mu\nu}
+-{1\over4}Z_{\mu\nu}Z^{\mu\nu}
+-ig(W^0_\mu W^-_\nu\overleftrightarrow\partial^\mu W^{+\nu}+
+\hbox{cycl. perm. (0-+)})
+</e>
+<e>
+    -g^2[{1\over2}(W^+_\mu W^{-\mu})^2- \hbox{... (5.77)}]=
+</e>
+<e> =
+-{1\over2}W^-_{\mu\nu}W^{+\mu\nu}
+-{1\over4}A_{\mu\nu}A^{\mu\nu}
+-{1\over4}Z_{\mu\nu}Z^{\mu\nu}
++[\hbox{(5.79) - (5.84)]}
+</e>
 </section>
 
 

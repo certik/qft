@@ -95,6 +95,11 @@ so that we can then write:
 -{1\over\sqrt2}h_l(v+H)\bar ee=</e>
 <e>=-{1\over\sqrt2}h_lv\bar ee-{1\over\sqrt2}h_l\bar eeH</e>
 </section>
+<section>
+    <title>Gauge terms</title>
+<e>\L_{Gauge} = -{1\over4}F^a_{\mu\nu}F^{a\mu\nu}
+    -{1\over4}B_{\mu\nu}B^{\mu\nu}</e>
+</section>
 
 
 

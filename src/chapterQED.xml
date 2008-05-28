@@ -6,16 +6,38 @@
 Lagrangian with a global <m>SU(2)\times U(1)</m> symmetry:
 <e>
 \L=i\bar L^{(l)}\gamma_\mu\partial^\mu L^{(l)}+i\bar e_R \gamma_\mu\partial^\mu e_R
-+\half \partial_\mu\phi^{*a}\partial^\mu\phi^a-m^2\phi^{*a}\phi^a-{1\over4}
-\lambda(\phi^{*a}\phi_a)^2
--h_e\bar L^{(l)} \phi_a e_R - \hbox{h.c.}
++\half \partial_\mu\Phi^*\partial^\mu\Phi-m^2\Phi^*\Phi-{1\over4}
+\lambda(\Phi^*\Phi)^2
+-h_e\bar L^{(l)} \Phi e_R - \hbox{h.c.}
 </e>
 where <m>l=e,\mu,\tau</m> and <m>a=1,2</m>.
 </p>
 <p>
 Local <m>SU(2)\times U(1)</m> symmetry:
 </p>
-        </section>
+<p>This consists of two things. First changing the partial derivatives to
+covariant ones:
+<e>\partial^\mu \to D^\mu
+    =\partial^\mu-{i\over2}g\tau_k A_k^\mu - {i\over2}g'YB^\mu</e>
+and second adding the kinetic terms
+<e>-{1\over4}F^a_{\mu\nu}F^{a\mu\nu}-{1\over4}B_{\mu\nu}B^{\mu\nu}</e>
+
+of the vector gauge particles to the
+lagrangian.
+<e>F^a_{\mu\nu} = \partial_\mu A^a_\nu-\partial_\nu A^a_\mu+
+    g\epsilon^{abc}A^b_\mu A^c_\nu
+</e>
+<e>B_{\mu\nu} = \partial_\mu B_\nu-\partial_\nu B_\mu
+</e>
+</p>
+Spontaneous symmetry breaking:
+<e>\Phi = e^{{i\over v}\pi^a(x)\tau^a} \left( \begin{array}{c}
+    0 \\
+    {1\over\sqrt{2}}(v+H(x)) \end{array} \right)</e>
+This breaks the gauge invariance. The <m>\partial^\mu\pi^a</m> are going to be
+added to <m>A^a_\mu</m> so we can set <m>\pi_a = 0</m> now.
+
+</section>
 <section>
 <title>QED</title>
 <p>

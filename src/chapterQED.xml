@@ -81,7 +81,14 @@ By defining <m>\theta_W</m> by the relation
 <e>\cos\theta_W = {g\over\sqrt{g^2+4Y^2g'^2}}</e>
 we can then write:
 <e>Z_\mu= \cos\theta_W A^3_\mu - \sin\theta_W B_\mu</e>
-
+</section>
+<section>
+    <title>Yukawa terms</title>
+<e>\L_{Yukawa} = -h_l \bar L \Phi e_R + \hbox{h.c.}=
+-h_l \bar L \Phi_U e_R + \hbox{h.c.}=</e>
+<e>=-{1\over\sqrt2}h_l(v+H)(\bar e_L e_R + \bar e_R e_L)=
+-{1\over\sqrt2}h_l(v+H)\bar ee=</e>
+<e>=-{1\over\sqrt2}h_lv\bar ee-{1\over\sqrt2}h_l\bar eeH</e>
 </section>
 
 

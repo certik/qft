@@ -36,6 +36,9 @@ Spontaneous symmetry breaking:
     {1\over\sqrt{2}}(v+H(x)) \end{array} \right)</e>
 This breaks the gauge invariance. The <m>\partial^\mu\pi^a</m> are going to be
 added to <m>A^a_\mu</m> so we can set <m>\pi_a = 0</m> now.
+<section>
+    <title>Higgs Terms</title>
+</section>
 
 </section>
 <section>

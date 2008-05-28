@@ -36,9 +36,59 @@ Spontaneous symmetry breaking:
     {1\over\sqrt{2}}(v+H(x)) \end{array} \right)</e>
 This breaks the gauge invariance. The <m>\partial^\mu\pi^a</m> are going to be
 added to <m>A^a_\mu</m> so we can set <m>\pi_a = 0</m> now.
+
 <section>
     <title>Higgs Terms</title>
+Plugging in the <m>\Phi</m> in U-gauge:
+<e>\L_{Higgs} = \Phi^+(\overleftarrow\partial_\mu+igA^a_\mu {\tau^a\over 2} + ig'YB_\mu)
+    (\overrightarrow\partial^\mu+igA^{a\mu} {\tau^a\over 2} + ig'YB^\mu)\Phi
+    -\lambda(\Phi^+\Phi-{v^2\over2})^2=
+</e>
+<e> = \Phi^+_U(\overleftarrow\partial_\mu+igA^a_\mu {\tau^a\over 2} + ig'YB_\mu)
+    (\overrightarrow\partial^\mu+igA^{a\mu} {\tau^a\over 2} +
+    ig'YB\mu)\Phi_U -\lambda(\Phi^+_U\Phi_U-{v^2\over2})^2 =
+</e>
+<e>
+= {1\over2}\partial_\mu H\partial^\mu H - \lambda v^2 H^2 - \lambda v H^3 -
+{1\over 4}\lambda H^4 + </e>
+<e>+{1\over 8}(v+H)^2
+    \left(2g^2{A^1_\mu+iA^2_\mu\over\sqrt2}{A^{1\mu}-iA^{2\mu}\over\sqrt2}
+    +
+    (g^2+4Y^2g'^2){gA^3_\mu-2Yg'B_\mu\over\sqrt{g^2+4Y^2g'^2}}
+    {gA^{3\mu}-2Yg'B^\mu\over\sqrt{g^2+4Y^2g'^2}}\right) =
+</e>
+<e>
+= {1\over2}\partial_\mu H\partial^\mu H - \lambda v^2 H^2 - \lambda v H^3 -
+{1\over 4}\lambda H^4 + {1\over 8}(v+H)^2
+    \left(2g^2W^-_\mu W^{+\mu} + (g^2+4Y^2g'^2)Z_\mu Z^\mu\right) =
+</e>
+<e>
+= {1\over2}\partial_\mu H\partial^\mu H - \lambda v^2 H^2
++{1\over4}g^2v^2W^-_\mu W^{+\mu}+{1\over8}(g^2+4Y^2g'^2)Z_\mu Z^\mu
+- \lambda v H^3 - {1\over 4}\lambda H^4 +
+</e>
+<e>
++{1\over2}vHg^2W_\mu^-W^{+\mu}
++{1\over4}vH(g^2+4Y^2g'^2)Z_\mu Z^\mu
++{1\over4}H^2g^2W_\mu^-W^{+\mu}
++{1\over8}H^2(g^2+4Y^2g'^2)Z_\mu Z^\mu
+</e>
+Where we put
+<e>W^{\pm}_\mu = {1\over\sqrt2}(A^1_\mu \mp iA^2_\mu)</e>
+<e>Z_\mu = {g\over\sqrt{g^2+4Y^2g'^2}}A^3_\mu-
+    {2Yg'\over\sqrt{g^2+4Y^2g'^2}}B_\mu</e>
+By defining <m>\theta_W</m> by the relation
+<e>\cos\theta_W = {g\over\sqrt{g^2+4Y^2g'^2}}</e>
+we can then write:
+<e>Z_\mu= \cos\theta_W A^3_\mu - \sin\theta_W B_\mu</e>
+
 </section>
+
+
+
+
+
+
 
 </section>
 <section>

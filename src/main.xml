@@ -15,7 +15,7 @@
 
 <article>
     <articleinfo>
-        <title>Master Thesis</title>
+        <title>Quantum Field Theory</title>
         <mathinclude>
             \usepackage{braket}
             \input macros.tex

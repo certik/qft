@@ -5,12 +5,17 @@
 <p>
 Lagrangian with a global <m>SU(2)\times U(1)</m> symmetry:
 <e>
-\L=i\bar L^{(l)}\gamma_\mu\partial^\mu L^{(l)}+i\bar e_R \gamma_\mu\partial^\mu e_R
+\L=i\bar L^{(l)}\gamma_\mu\partial^\mu L^{(l)}+i\bar l_R \gamma_\mu\partial^\mu l_R
 +\half \partial_\mu\Phi^*\partial^\mu\Phi-m^2\Phi^*\Phi-{1\over4}
 \lambda(\Phi^*\Phi)^2
 -h_e\bar L^{(l)} \Phi e_R - \hbox{h.c.}
 </e>
-where <m>l=e,\mu,\tau</m> and <m>a=1,2</m>.
+where <m>l=e,\mu,\tau</m> and <m>a=1,2</m>, <m>l_{L,R} = \half
+(1\mp\gamma_5)l</m> and
+<e>L^{(l)} = \left( \begin{array}{c}
+    \nu_{(l)L} \\
+    l_L
+    \end{array} \right)</e>
 </p>
 <p>
 Local <m>SU(2)\times U(1)</m> symmetry:
@@ -148,7 +153,95 @@ so that we can then write:
 +[\hbox{(5.79) - (5.84)]}
 </e>
 </section>
+<section>
+    <title>Leptonic Terms</title>
+<e>
+\L=i\bar L\gamma^\mu\partial_\mu L+i\bar e_R \gamma^\mu\partial_\mu e_R
+\to
+</e>
+<e>
+    \to
+i\bar L\gamma^\mu(\partial_\mu-igA^a_\mu{\tau^a\over2}-ig'Y_LB_\mu) L
++i\bar e_R \gamma^\mu(\partial_\mu-ig'Y_RB_\mu) e_R
+=
+</e>
+<e>
+=
+i\bar L\gamma^\mu\partial_\mu L+i\bar e_R \gamma^\mu\partial_\mu e_R
++g\bar L\gamma^\mu{\tau^a\over2}LA^a_\mu
++g'Y_L\bar L\gamma^\mu LB_\mu
++g'Y_R\bar e_R \gamma^\mu e_R B_\mu
+=
+</e>
+<e>
+=
+i\bar L\gamma^\mu\partial_\mu L+i\bar e_R \gamma^\mu\partial_\mu e_R
++{g\over\sqrt2}(\bar \nu_L\gamma^\mu e_L W^+_\mu + \hbox{h.c})
++{1\over2}g\bar L\gamma^\mu\tau^3L A^3_\mu
++g'Y_L\bar L\gamma^\mu LB_\mu
++g'Y_R\bar e_R \gamma^\mu e_R B_\mu
+=
+</e>
+<e>
+=
+i\bar L\gamma^\mu\partial_\mu L+i\bar e_R \gamma^\mu\partial_\mu e_R
++{g\over\sqrt2}(\bar \nu_L\gamma^\mu e_L W^+_\mu + \hbox{h.c})
++{1\over2}g\bar\nu_L\gamma^\mu\nu_LA^3_\mu
+-{1\over2}g\bar e_L\gamma^\mu e_LA^3_\mu
+</e>
+<e>
++g'Y_L\bar\nu_L\gamma^\mu\nu_LB_\mu
++g'Y_L\bar e_L\gamma^\mu e_LB_\mu
++g'Y_R\bar e_R \gamma^\mu e_R B_\mu
+=
+</e>
+<e>
+=
+i\bar L\gamma^\mu\partial_\mu L+i\bar e_R \gamma^\mu\partial_\mu e_R
++{g\over\sqrt2}(\bar \nu_L\gamma^\mu e_L W^+_\mu + \hbox{h.c})
+</e>
+<e>
++\left[
+(\half g\sin\theta_W+Y_Lg'\cos\theta_W)\bar\nu_L\gamma^\mu\nu_L
++(-\half g\sin\theta_W +Y_Lg'\cos\theta_W)\bar e_L\gamma^\mu e_L
++Y_Rg'\cos\theta_W\bar e_R\gamma^\mu e_R
+\right]A_\mu
+</e>
+<e>
++\left[
+(\half g\cos\theta_W-Y_Lg'\sin\theta_W)\bar\nu_L\gamma^\mu\nu_L
++(-\half g\cos\theta_W -Y_Lg'\sin\theta_W)\bar e_L\gamma^\mu e_L
+-2Y_Lg'\sin\theta_W\bar e_R\gamma^\mu e_R
+\right]Z_\mu
+</e>
+We now need to make some natural requirements in order to move further. The
+neutrino fields should be absent from the interaction term with <m>A_\mu</m>
+and the right-handed and
+left-handed components of the electron field should interact with the
+<m>A_\mu</m> with an equal strength:
+<e> \half g\sin\theta_W+Y_Lg'\cos\theta_W = 0 </e>
+<e>-\half g\sin\theta_W +Y_Lg'\cos\theta_W = Y_Rg'\cos\theta_W</e>
+from which it follows
+<e>Y_R = 2Y_L</e>
+<e>\tan\theta_W = -2Y_L {g'\over g}</e>
+then the Lagrangian can be further simplified:
+<e>
+\L=
+i\bar L\gamma^\mu\partial_\mu L+i\bar e_R \gamma^\mu\partial_\mu e_R
++{g\over\sqrt2}(\bar \nu_L\gamma^\mu e_L W^+_\mu + \hbox{h.c})
+</e>
+<e>
+-g\sin\theta_W(\bar e_L\gamma^\mu e_L+\bar e_R\gamma^\mu e_R) A_\mu
+</e>
+<e>
++{g\over\cos\theta_W}\left[
+\half \bar\nu_L\gamma^\mu\nu_L
++(-\half + \sin^2\theta_W)\bar e_L\gamma^\mu e_L
++\sin^2\theta_W\bar e_R\gamma^\mu e_R
+\right]Z_\mu
+</e>
 
+</section>
 
 
 

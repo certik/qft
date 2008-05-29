@@ -70,27 +70,28 @@ U-gauge (symmetry breaking):
 <e>
 = {1\over2}\partial_\mu H\partial^\mu H - \lambda v^2 H^2 - \lambda v H^3 -
 {1\over 4}\lambda H^4 + {1\over 8}(v+H)^2
-    \left(2g^2W^-_\mu W^{+\mu} + (g^2+4Y^2g'^2)Z_\mu Z^\mu\right) =
+\left(2g^2W^-_\mu W^{+\mu} + {g^2\over\cos^2\theta_W}Z_\mu Z^\mu\right) =
 </e>
 <e>
 = {1\over2}\partial_\mu H\partial^\mu H - \lambda v^2 H^2
-+{1\over4}g^2v^2W^-_\mu W^{+\mu}+{1\over8}(g^2+4Y^2g'^2)Z_\mu Z^\mu
++{1\over4}g^2v^2W^-_\mu W^{+\mu}+{g^2v^2\over8\cos^2\theta_W}Z_\mu Z^\mu
 - \lambda v H^3 - {1\over 4}\lambda H^4 +
 </e>
 <e>
-+{1\over2}vHg^2W_\mu^-W^{+\mu}
-+{1\over4}vH(g^2+4Y^2g'^2)Z_\mu Z^\mu
-+{1\over4}H^2g^2W_\mu^-W^{+\mu}
-+{1\over8}H^2(g^2+4Y^2g'^2)Z_\mu Z^\mu
++{1\over2}vg^2W_\mu^-W^{+\mu}H
++{g^2\over4\cos\theta_W}vZ_\mu Z^\mu H
++{1\over4}g^2W_\mu^-W^{+\mu}H^2
++{g^2\over8\cos\theta_W}Z_\mu Z^\mu H^2
 </e>
 Where we put
 <e>W^{\pm}_\mu = {1\over\sqrt2}(A^1_\mu \mp iA^2_\mu)</e>
 <e>Z_\mu = {g\over\sqrt{g^2+4Y^2g'^2}}A^3_\mu-
     {2Yg'\over\sqrt{g^2+4Y^2g'^2}}B_\mu</e>
-Now we define <m>\theta_W</m> by the relation
+we defined <m>\theta_W</m> by the relation
 <e>\cos\theta_W = {g\over\sqrt{g^2+4Y^2g'^2}}</e>
-so that we can then write:
+so that the expressions simplify a bit, e.g.:
 <e>Z_\mu= \cos\theta_W A^3_\mu - \sin\theta_W B_\mu</e>
+<e>g^2+4Y^2g'^2 = {g^2\over\cos^2\theta_W}</e>
 </section>
 <section>
     <title>Yukawa terms</title>
@@ -144,7 +145,11 @@ so that we can then write:
 \hbox{cycl. perm. (0-+)})
 </e>
 <e>
-    -g^2[{1\over2}(W^+_\mu W^{-\mu})^2- \hbox{... (5.77)}]=
+-g^2[
+\half(W^+_\mu W^{-\mu})^2
+-\half(W^+_\mu W^{+\mu})(W^-_\nu W^{-\nu})
++(W^0_\mu W^{0\mu})(W^+_\nu W^{-\nu})
+-(W^-_\mu W^+_\nu)(W^{0\mu} W^{0\nu})=
 </e>
 <e> =
 -{1\over2}W^-_{\mu\nu}W^{+\mu\nu}
@@ -238,8 +243,25 @@ i\bar L\gamma^\mu\partial_\mu L+i\bar e_R \gamma^\mu\partial_\mu e_R
 \half \bar\nu_L\gamma^\mu\nu_L
 +(-\half + \sin^2\theta_W)\bar e_L\gamma^\mu e_L
 +\sin^2\theta_W\bar e_R\gamma^\mu e_R
+\right]Z_\mu=
+</e>
+<e>
+=
+i\bar L\gamma^\mu\partial_\mu L+i\bar e_R \gamma^\mu\partial_\mu e_R
++{g\over2\sqrt2}(\bar \nu\gamma^\mu (1-\gamma_5) e W^+_\mu + \hbox{h.c})
+-g\sin\theta_W\bar e\gamma^\mu e A_\mu
+</e>
+<e>
++{g\over2\cos\theta_W}\left[
+\bar\nu\gamma^\mu(1-\gamma_5)\nu
++\bar e\gamma^\mu (-\half+2\sin^2\theta_W+\half\gamma_5) e
 \right]Z_\mu
 </e>
+Where we used the relations
+<m>\bar\nu_L\gamma^\mu e_L=\half\bar\nu\gamma^\mu (1-\gamma_5)e</m>
+and
+<m>\bar\nu_R\gamma^\mu e_R=\half\bar\nu\gamma^\mu (1+\gamma_5)e</m>
+.
 
 </section>
 

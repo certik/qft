@@ -89,7 +89,8 @@ Where we put
     {2Yg'\over\sqrt{g^2+4Y^2g'^2}}B_\mu</e>
 we defined <m>\theta_W</m> by the relation
 <e>\cos\theta_W = {g\over\sqrt{g^2+4Y^2g'^2}}</e>
-so that the expressions simplify a bit, e.g.:
+so that the expressions simplify a bit, e.g. we now get:
+<e>\sin\theta_W = {2Yg'\over\sqrt{g^2+4Y^2g'^2}}</e>
 <e>Z_\mu= \cos\theta_W A^3_\mu - \sin\theta_W B_\mu</e>
 <e>g^2+4Y^2g'^2 = {g^2\over\cos^2\theta_W}</e>
 </section>
@@ -100,6 +101,125 @@ so that the expressions simplify a bit, e.g.:
 <e>=-{1\over\sqrt2}h_l(v+H)(\bar e_L e_R + \bar e_R e_L)=
 -{1\over\sqrt2}h_l(v+H)\bar ee=</e>
 <e>=-{1\over\sqrt2}h_lv\bar ee-{1\over\sqrt2}h_l\bar eeH</e>
+The term <m>\bar L \Phi e_R</m> is <m>U(1)</m> (hypercharge) invariant, so
+<e>-Y_L+Y+Y_R=0</e>
+</section>
+<section>
+    <title>Leptonic Terms</title>
+<e>
+\L=i\bar L\gamma^\mu\partial_\mu L+i\bar e_R \gamma^\mu\partial_\mu e_R
+\to
+</e>
+<e>
+    \to
+i\bar L\gamma^\mu(\partial_\mu-igA^a_\mu{\tau^a\over2}-ig'Y_LB_\mu) L
++i\bar e_R \gamma^\mu(\partial_\mu-ig'Y_RB_\mu) e_R
+=
+</e>
+<e>
+=
+i\bar L\gamma^\mu\partial_\mu L+i\bar e_R \gamma^\mu\partial_\mu e_R
++g\bar L\gamma^\mu{\tau^a\over2}LA^a_\mu
++g'Y_L\bar L\gamma^\mu LB_\mu
++g'Y_R\bar e_R \gamma^\mu e_R B_\mu
+=
+</e>
+<e>
+=
+i\bar L\gamma^\mu\partial_\mu L+i\bar e_R \gamma^\mu\partial_\mu e_R
++{g\over\sqrt2}(\bar \nu_L\gamma^\mu e_L W^+_\mu + \hbox{h.c.})
++{1\over2}g\bar L\gamma^\mu\tau^3L A^3_\mu
++g'Y_L\bar L\gamma^\mu LB_\mu
++g'Y_R\bar e_R \gamma^\mu e_R B_\mu
+=
+</e>
+<e>
+=
+i\bar \nu_L\gamma^\mu\partial_\mu \nu_L+i\bar e \gamma^\mu\partial_\mu e
++{g\over\sqrt2}(\bar \nu_L\gamma^\mu e_L W^+_\mu + \hbox{h.c.})
++{1\over2}g\bar\nu_L\gamma^\mu\nu_LA^3_\mu
+-{1\over2}g\bar e_L\gamma^\mu e_LA^3_\mu
+</e>
+<e>
++g'Y_L\bar\nu_L\gamma^\mu\nu_LB_\mu
++g'Y_L\bar e_L\gamma^\mu e_LB_\mu
++g'Y_R\bar e_R \gamma^\mu e_R B_\mu
+=
+</e>
+<e>
+=
+i\bar \nu_L\gamma^\mu\partial_\mu \nu_L+i\bar e \gamma^\mu\partial_\mu e
++{g\over\sqrt2}(\bar \nu_L\gamma^\mu e_L W^+_\mu + \hbox{h.c.})
+</e>
+<e>
++\left[
+(\half g\sin\theta_W+Y_Lg'\cos\theta_W)\bar\nu_L\gamma^\mu\nu_L
++(-\half g\sin\theta_W +Y_Lg'\cos\theta_W)\bar e_L\gamma^\mu e_L
++Y_Rg'\cos\theta_W\bar e_R\gamma^\mu e_R
+\right]A_\mu
+</e>
+<e>
++\left[
+(\half g\cos\theta_W-Y_Lg'\sin\theta_W)\bar\nu_L\gamma^\mu\nu_L
++(-\half g\cos\theta_W -Y_Lg'\sin\theta_W)\bar e_L\gamma^\mu e_L
+-2Y_Lg'\sin\theta_W\bar e_R\gamma^\mu e_R
+\right]Z_\mu
+</e>
+Where we substituted new fields <m>Z_\mu</m> and <m>A_\mu</m> for the old ones
+<m>A^3_\mu</m>
+and <m>B_\mu</m> using the relation:
+<e>Z_\mu= \cos\theta_W A^3_\mu - \sin\theta_W B_\mu</e>
+<e>A_\mu= \sin\theta_W A^3_\mu + \cos\theta_W B_\mu</e>
+The angle <m>\theta_W</m> must be the same as in the Higgs sector, so that the
+field <m>Z_\mu</m> is the same.
+We now need to make the following requirement in order to proceed further:
+<e>Y = -Y_L</e>
+This follows for example by requiring that neutrinos have zero charge, i.e.
+setting
+<m> \half g\sin\theta_W+Y_Lg'\cos\theta_W = 0 </m> and substituting
+for <m>\theta_W</m> from the definition (see the Higgs terms), from which one
+gets <m>Y=-Y_L</m>.
+
+From <m>-Y_L+Y+Y_R=0</m> we now get
+<e>Y_R = 2Y_L</e>
+it now follows:
+<e> \half g\sin\theta_W+Y_Lg'\cos\theta_W = 0 </e>
+<e>-\half g\sin\theta_W +Y_Lg'\cos\theta_W = -g\sin\theta_W</e>
+<e>Y_Rg'\cos\theta_W = -g\sin\theta_W</e>
+<e>\tan\theta_W = -2Y_L {g'\over g}</e>
+and the Lagrangian can be further simplified:
+<e>
+\L=
+i\bar\nu_L\gamma^\mu\partial_\mu\nu_L+i\bar e\gamma^\mu\partial_\mu e
++{g\over\sqrt2}(\bar \nu_L\gamma^\mu e_L W^+_\mu + \hbox{h.c.})
+</e>
+<e>
+-g\sin\theta_W(\bar e_L\gamma^\mu e_L+\bar e_R\gamma^\mu e_R) A_\mu
+</e>
+<e>
++{g\over\cos\theta_W}\left[
+\half \bar\nu_L\gamma^\mu\nu_L
++(-\half + \sin^2\theta_W)\bar e_L\gamma^\mu e_L
++\sin^2\theta_W\bar e_R\gamma^\mu e_R
+\right]Z_\mu=
+</e>
+<e>
+=
+i\bar\nu_L\gamma^\mu\partial_\mu\nu_L+i\bar e \gamma^\mu\partial_\mu e
++{g\over2\sqrt2}(\bar \nu\gamma^\mu (1-\gamma_5) e W^+_\mu + \hbox{h.c.})
+-g\sin\theta_W\bar e\gamma^\mu e A_\mu
+</e>
+<e>
++{g\over2\cos\theta_W}\left[
+\bar\nu\gamma^\mu(1-\gamma_5)\nu
++\bar e\gamma^\mu (-\half+2\sin^2\theta_W+\half\gamma_5) e
+\right]Z_\mu
+</e>
+Where we used the relations
+<m>\bar\nu_L\gamma^\mu e_L=\half\bar\nu\gamma^\mu (1-\gamma_5)e</m>
+and
+<m>\bar\nu_R\gamma^\mu e_R=\half\bar\nu\gamma^\mu (1+\gamma_5)e</m>
+.
 </section>
 <section>
     <title>Gauge terms</title>
@@ -159,124 +279,8 @@ so that the expressions simplify a bit, e.g.:
 </e>
 </section>
 <section>
-    <title>Leptonic Terms</title>
-<e>
-\L=i\bar L\gamma^\mu\partial_\mu L+i\bar e_R \gamma^\mu\partial_\mu e_R
-\to
-</e>
-<e>
-    \to
-i\bar L\gamma^\mu(\partial_\mu-igA^a_\mu{\tau^a\over2}-ig'Y_LB_\mu) L
-+i\bar e_R \gamma^\mu(\partial_\mu-ig'Y_RB_\mu) e_R
-=
-</e>
-<e>
-=
-i\bar L\gamma^\mu\partial_\mu L+i\bar e_R \gamma^\mu\partial_\mu e_R
-+g\bar L\gamma^\mu{\tau^a\over2}LA^a_\mu
-+g'Y_L\bar L\gamma^\mu LB_\mu
-+g'Y_R\bar e_R \gamma^\mu e_R B_\mu
-=
-</e>
-<e>
-=
-i\bar L\gamma^\mu\partial_\mu L+i\bar e_R \gamma^\mu\partial_\mu e_R
-+{g\over\sqrt2}(\bar \nu_L\gamma^\mu e_L W^+_\mu + \hbox{h.c})
-+{1\over2}g\bar L\gamma^\mu\tau^3L A^3_\mu
-+g'Y_L\bar L\gamma^\mu LB_\mu
-+g'Y_R\bar e_R \gamma^\mu e_R B_\mu
-=
-</e>
-<e>
-=
-i\bar \nu_L\gamma^\mu\partial_\mu \nu_L+i\bar e \gamma^\mu\partial_\mu e
-+{g\over\sqrt2}(\bar \nu_L\gamma^\mu e_L W^+_\mu + \hbox{h.c})
-+{1\over2}g\bar\nu_L\gamma^\mu\nu_LA^3_\mu
--{1\over2}g\bar e_L\gamma^\mu e_LA^3_\mu
-</e>
-<e>
-+g'Y_L\bar\nu_L\gamma^\mu\nu_LB_\mu
-+g'Y_L\bar e_L\gamma^\mu e_LB_\mu
-+g'Y_R\bar e_R \gamma^\mu e_R B_\mu
-=
-</e>
-<e>
-=
-i\bar \nu_L\gamma^\mu\partial_\mu \nu_L+i\bar e \gamma^\mu\partial_\mu e
-+{g\over\sqrt2}(\bar \nu_L\gamma^\mu e_L W^+_\mu + \hbox{h.c})
-</e>
-<e>
-+\left[
-(\half g\sin\theta_W+Y_Lg'\cos\theta_W)\bar\nu_L\gamma^\mu\nu_L
-+(-\half g\sin\theta_W +Y_Lg'\cos\theta_W)\bar e_L\gamma^\mu e_L
-+Y_Rg'\cos\theta_W\bar e_R\gamma^\mu e_R
-\right]A_\mu
-</e>
-<e>
-+\left[
-(\half g\cos\theta_W-Y_Lg'\sin\theta_W)\bar\nu_L\gamma^\mu\nu_L
-+(-\half g\cos\theta_W -Y_Lg'\sin\theta_W)\bar e_L\gamma^\mu e_L
--2Y_Lg'\sin\theta_W\bar e_R\gamma^\mu e_R
-\right]Z_\mu
-</e>
-Where we substituted new fields <m>Z_\mu</m> and <m>A_\mu</m> for the old ones
-<m>A^3_\mu</m>
-and <m>B_\mu</m> using the relation:
-<e>Z_\mu= \cos\theta_W A^3_\mu - \sin\theta_W B_\mu</e>
-<e>A_\mu= \sin\theta_W A^3_\mu + \cos\theta_W B_\mu</e>
-The angle <m>\theta_W</m> is arbitrary so far.
-We now need to make some natural requirements in order to move further. The
-neutrino fields should be absent from the interaction term with <m>A_\mu</m>
-and the right-handed and
-left-handed components of the electron field should interact with the
-<m>A_\mu</m> with an equal strength:
-<e> \half g\sin\theta_W+Y_Lg'\cos\theta_W = 0 </e>
-<e>-\half g\sin\theta_W +Y_Lg'\cos\theta_W = Y_Rg'\cos\theta_W</e>
-from which it follows
-<e>Y_R = 2Y_L</e>
-<e>\tan\theta_W = -2Y_L {g'\over g}</e>
-<e>\cos\theta_W = {g\over\sqrt{g^2+4Y_L^2g'^2}}</e>
-then the Lagrangian can be further simplified:
-<e>
-\L=
-i\bar\nu_L\gamma^\mu\partial_\mu\nu_L+i\bar e\gamma^\mu\partial_\mu e
-+{g\over\sqrt2}(\bar \nu_L\gamma^\mu e_L W^+_\mu + \hbox{h.c})
-</e>
-<e>
--g\sin\theta_W(\bar e_L\gamma^\mu e_L+\bar e_R\gamma^\mu e_R) A_\mu
-</e>
-<e>
-+{g\over\cos\theta_W}\left[
-\half \bar\nu_L\gamma^\mu\nu_L
-+(-\half + \sin^2\theta_W)\bar e_L\gamma^\mu e_L
-+\sin^2\theta_W\bar e_R\gamma^\mu e_R
-\right]Z_\mu=
-</e>
-<e>
-=
-i\bar\nu_L\gamma^\mu\partial_\mu\nu_L+i\bar e \gamma^\mu\partial_\mu e
-+{g\over2\sqrt2}(\bar \nu\gamma^\mu (1-\gamma_5) e W^+_\mu + \hbox{h.c})
--g\sin\theta_W\bar e\gamma^\mu e A_\mu
-</e>
-<e>
-+{g\over2\cos\theta_W}\left[
-\bar\nu\gamma^\mu(1-\gamma_5)\nu
-+\bar e\gamma^\mu (-\half+2\sin^2\theta_W+\half\gamma_5) e
-\right]Z_\mu
-</e>
-Where we used the relations
-<m>\bar\nu_L\gamma^\mu e_L=\half\bar\nu\gamma^\mu (1-\gamma_5)e</m>
-and
-<m>\bar\nu_R\gamma^\mu e_R=\half\bar\nu\gamma^\mu (1+\gamma_5)e</m>
-.
-</section>
-<section>
     <title>GWS Lagrangian</title>
 <p>
-We need to set
-<e>Y=Y_L</e>
-otherwise the fields from the Higgs terms and the leptonic terms will not be
-the same. Now <m>\theta_W</m> is the same in both set of terms.
 Plugging everything together we get the GWS Lagrangian:
 <e>
 \L
@@ -299,7 +303,7 @@ Plugging everything together we get the GWS Lagrangian:
 </e>
 <e>
 +i\bar\nu_L\gamma^\mu\partial_\mu\nu_L+i\bar e \gamma^\mu\partial_\mu e
-+{g\over2\sqrt2}(\bar \nu\gamma^\mu (1-\gamma_5) e W^+_\mu + \hbox{h.c})
++{g\over2\sqrt2}(\bar \nu\gamma^\mu (1-\gamma_5) e W^+_\mu + \hbox{h.c.})
 -g\sin\theta_W\bar e\gamma^\mu e A_\mu
 </e>
 <e>

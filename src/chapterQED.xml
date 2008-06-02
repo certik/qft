@@ -355,6 +355,21 @@ we get
 </p>
 </section>
 
+<section>
+    <title>Quarks</title>
+<p>
+<e>\L_{fermion}+\!\!=
+\sum_{q=d,s,b}i\bar L_0^{(q)}\gamma^\mu\partial_\mu L_0^{(q)}
++\sum_{q=d,u,s,c,b,t}i\bar q_{0R}\gamma^\mu\partial_\mu q_{0R}
+</e>
+<e>\L_{Yukawa}+\!\!=
+-\sum_{q=d,s,b\atop q'=d,s,b}h_{qq'}i\bar L_0^{(q)}\Phi q_{0R}'+\hbox{h.c.}
+-\sum_{q=d,s,b\atop q'=u,c,t}\tilde h_{qq'}i\bar L_0^{(q)}\tilde\Phi q_{0R}'+\hbox{h.c.}
+</e>
+More to be added here...
+</p>
+</section>
+
 
 
 

@@ -96,11 +96,11 @@ so that the expressions simplify a bit, e.g. we now get:
 </section>
 <section>
     <title>Yukawa terms</title>
-<e>\L_{Yukawa} = -h_l \bar L \Phi e_R - \hbox{h.c.}=
--h_l \bar L \Phi_U e_R - \hbox{h.c.}=</e>
-<e>=-{1\over\sqrt2}h_l(v+H)(\bar e_L e_R + \bar e_R e_L)=
--{1\over\sqrt2}h_l(v+H)\bar ee=</e>
-<e>=-{1\over\sqrt2}h_lv\bar ee-{1\over\sqrt2}h_l\bar eeH</e>
+<e>\L_{Yukawa} = -h_e \bar L \Phi e_R - \hbox{h.c.}=
+-h_e \bar L \Phi_U e_R - \hbox{h.c.}=</e>
+<e>=-{1\over\sqrt2}h_e(v+H)(\bar e_L e_R + \bar e_R e_L)=
+-{1\over\sqrt2}h_e(v+H)\bar ee=</e>
+<e>=-{1\over\sqrt2}h_ev\bar ee-{1\over\sqrt2}h_e\bar eeH</e>
 The term <m>\bar L \Phi e_R</m> is <m>U(1)</m> (hypercharge) invariant, so
 <e>-Y_L+Y+Y_R=0</e>
 </section>
@@ -294,7 +294,7 @@ Plugging everything together we get the GWS Lagrangian:
 +{1\over4}g^2W_\mu^-W^{+\mu}H^2
 +{g^2\over8\cos\theta_W}Z_\mu Z^\mu H^2
 </e>
-<e>-{1\over\sqrt2}h_lv\bar ee-{1\over\sqrt2}h_l\bar eeH</e>
+<e>-{1\over\sqrt2}h_ev\bar ee-{1\over\sqrt2}h_e\bar eeH</e>
 <e>
 -{1\over2}W^-_{\mu\nu}W^{+\mu\nu}
 -{1\over4}A_{\mu\nu}A^{\mu\nu}
@@ -312,6 +312,46 @@ Plugging everything together we get the GWS Lagrangian:
 +\bar e\gamma^\mu (-\half+2\sin^2\theta_W+\half\gamma_5) e
 \right]Z_\mu
 </e>
+<e>
++ (e, \nu_e, h_e    \leftrightarrow  \mu, \nu_\mu, h_\mu)
++ (e, \nu_e, h_e    \leftrightarrow  \tau, \nu_\tau, h_\tau)
+</e>
+</p>
+<p>
+The free parameters are <m>g</m>, <m>\theta_W</m>, <m>v</m>, <m>\lambda</m>,
+<m>h_e</m>,
+<m>h_\mu</m>,
+<m>h_\tau</m>.
+</p>
+</section>
+<section>
+    <title>Particle Masses</title>
+<p>
+The particle masses are deduced from the terms
+<e>
+\L
+=
+-{1\over2}m_H^2 H^2
++m_W^2 W^-_\mu W^{+\mu}
++{1\over2}m_Z^2 Z_\mu Z^\mu
+-m_e\bar ee
++\cdots
+</e>
+comparing to the above:
+<e>
+\L
+=
+-\lambda v^2 H^2
++{1\over4}g^2v^2W^-_\mu W^{+\mu}
++{g^2v^2\over8\cos^2\theta_W}Z_\mu Z^\mu
+-{1\over\sqrt2}h_ev\bar ee
++\cdots
+</e>
+we get
+<e> m_W = \half g v</e>
+<e> m_Z = {gv\over2\cos\theta_W}={m_W\over\cos\theta}</e>
+<e> m_H = v\sqrt{2\lambda}</e>
+<e> m_e = {1\over\sqrt2}h_ev</e>
 </p>
 </section>
 

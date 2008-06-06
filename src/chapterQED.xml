@@ -379,25 +379,25 @@ More to be added here...
 <section>
     <title>QFT</title>
 <section>
-    <title>Scattering amplitudes, Evolution operator</title>
+    <title>Evolution Operator, S-Matrix Elements</title>
 <p>
-The evolution operator is defined by the equations:
-<e>\ket{\phi(t_2)}=S(t_2, t_1)\ket{\phi(t_1)}</e>
-<e>i\hbar{\partial S(t, t_1)\over\partial t} = H(t)S(t, t_1)</e>
-<e>S(t_1, t_1) = 1</e>
-We are interested in calculating the scattering amplitudes:
-<e>S_{fi} = \braket{f|S(-\infty,\infty)|i}</e>
-so we first calculate <m>S(-\infty,\infty)</m>. Integrating:
-<e>S(t_2, t_1)=S(t_1, t_1)-{i\over\hbar}\int_{t_1}^{t_2} H(t)S(t, t_1)\d t
-=1-{i\over\hbar}\int_{t_1}^{t_2} H(t)S(t, t_1)\d t</e>
+The evolution operator <m>U</m> is defined by the equations:
+<e>\ket{\phi(t_2)}=U(t_2, t_1)\ket{\phi(t_1)}</e>
+<e>i\hbar{\partial U(t, t_1)\over\partial t} = H(t)U(t, t_1)</e>
+<e>U(t_1, t_1) = 1</e>
+We are interested in calculating the S matrix elements:
+<e>S_{fi} = \braket{f|U(-\infty,\infty)|i}</e>
+so we first calculate <m>U(-\infty,\infty)</m>. Integrating:
+<e>U(t_2, t_1)=U(t_1, t_1)-{i\over\hbar}\int_{t_1}^{t_2} H(t)U(t, t_1)\d t
+=1-{i\over\hbar}\int_{t_1}^{t_2} H(t)U(t, t_1)\d t</e>
 Now:
-<e>S(-\infty,\infty)
-=1-{i\over\hbar} \int_{-\infty}^{\infty} H(t')S(t', -\infty)\d t'=
+<e>U(-\infty,\infty)
+=1-{i\over\hbar} \int_{-\infty}^{\infty} H(t')U(t', -\infty)\d t'=
 </e>
 <e>
-=1+\left(-{i\over\hbar}\right)\int_{-\infty}^{\infty} H(t')S(t', -\infty)\d t'
+=1+\left(-{i\over\hbar}\right)\int_{-\infty}^{\infty} H(t')U(t', -\infty)\d t'
 +\left(-{i\over\hbar}\right)^2\int_{-\infty}^{\infty} \int_{-\infty}^{t'}
-H(t')H(t'')S(t'', -\infty)\d t'\d t''=
+H(t')H(t'')U(t'', -\infty)\d t'\d t''=
 </e>
 <e>
 =\cdots=
@@ -409,6 +409,45 @@ T\{H(t_1)H(t_2)\cdots\}\d t_1\d t_2\cdots=
 = T\exp\left(-{i\over\hbar}\int_{-\infty}^{\infty}H(t)\d t \right)
 = T\exp\left(-{i\over\hbar}\int_{-\infty}^{\infty}\d^4 x \H(x) \right)
 </e>
+If <m>\L</m> doesn't contain derivatives of the fields, then
+<m>\H = -\L</m> so:
+<e>U(-\infty,\infty)
+= T\exp\left({i\over\hbar}\int_{-\infty}^{\infty}\d^4 x \L(x) \right)
+</e>
+</p>
+<p>
+Let's write <m>S=1+iT</m> and <m>\ket{i}=\ket{k_1\cdots k_m}</m>,
+<m>\ket{f}=\ket{p_1\cdots p_n}</m>. As a first step now, let's investigate a
+scalar field, e.g. <m>\L=\lambda\phi^4</m> (e.g. a Higgs self interaction term
+above), we'll look at other fields
+later:
+<e>
+\braket{f|S|i}=
+\braket{f|iT|i}=
+\braket{p_1\cdots p_n|iT|k_1\cdots k_m}=
+{1\over\tilde D(k_1)\cdots\tilde D(k_m)}
+{1\over\tilde D(p_1)\cdots\tilde D(p_n)}
+</e>
+<e>
+\int\d^4 x_1\cdots \d^4 x_m e^{-i(k_1 x_1+\cdots + k_m x_m)}
+\int\d^4 y_1\cdots \d^4 y_n e^{+i(p_1 y_1+\cdots + p_n y_n)}
+G(x_1, \cdots, x_m, y_1, \cdots, y_m)
+</e>
+where
+<e>G(x_1, \cdots, x_n)=
+    \braket{0|T\{\phi(x_1)\cdots\phi(x_n)\}|0}
+    =
+</e>
+<e>
+{\braket{0|T\{\phi_I(x_1)\cdots\phi_I(x_n)\exp\left({i\over\hbar}\int_{-\infty}^{\infty}\d^4 x \L(x) \right)\}|0}
+\over
+\braket{0|T\exp\left({i\over\hbar}\int_{-\infty}^{\infty}\d^4 x \L(x) \right)|0}
+}
+</e>
+Now we use the Wick contraction, get some terms like <m>D_{23}D_{34}</m>
+integrate things out, this will give the delta function and <m>\tilde
+    D(p)</m>'s
+and that's it.
 </p>
 </section>
 </section>

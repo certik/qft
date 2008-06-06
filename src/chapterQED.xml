@@ -377,6 +377,43 @@ More to be added here...
 
 </section>
 <section>
+    <title>QFT</title>
+<section>
+    <title>Scattering amplitudes, Evolution operator</title>
+<p>
+The evolution operator is defined by the equations:
+<e>\ket{\phi(t_2)}=S(t_2, t_1)\ket{\phi(t_1)}</e>
+<e>i\hbar{\partial S(t, t_1)\over\partial t} = H(t)S(t, t_1)</e>
+<e>S(t_1, t_1) = 1</e>
+We are interested in calculating the scattering amplitudes:
+<e>S_{fi} = \braket{f|S(-\infty,\infty)|i}</e>
+so we first calculate <m>S(-\infty,\infty)</m>. Integrating:
+<e>S(t_2, t_1)=S(t_1, t_1)-{i\over\hbar}\int_{t_1}^{t_2} H(t)S(t, t_1)\d t
+=1-{i\over\hbar}\int_{t_1}^{t_2} H(t)S(t, t_1)\d t</e>
+Now:
+<e>S(-\infty,\infty)
+=1-{i\over\hbar} \int_{-\infty}^{\infty} H(t')S(t', -\infty)\d t'=
+</e>
+<e>
+=1+\left(-{i\over\hbar}\right)\int_{-\infty}^{\infty} H(t')S(t', -\infty)\d t'
++\left(-{i\over\hbar}\right)^2\int_{-\infty}^{\infty} \int_{-\infty}^{t'}
+H(t')H(t'')S(t'', -\infty)\d t'\d t''=
+</e>
+<e>
+=\cdots=
+\sum_{n=0}^\infty \left(-{i\over\hbar}\right)^n {1\over n!}
+\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\cdots
+T\{H(t_1)H(t_2)\cdots\}\d t_1\d t_2\cdots=
+</e>
+<e>
+= T\exp\left(-{i\over\hbar}\int_{-\infty}^{\infty}H(t)\d t \right)
+= T\exp\left(-{i\over\hbar}\int_{-\infty}^{\infty}\d^4 x \H(x) \right)
+</e>
+</p>
+</section>
+</section>
+
+<section>
     <title>Low energy theories</title>
 <section>
     <title>Fermi-type theory</title>

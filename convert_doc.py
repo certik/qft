@@ -220,7 +220,7 @@ class LaTeXConverter(Converter):
     def convert_article(self, node):
         assert node.tag == "article"
         self.check_zero_tail(node.tail)
-        r = r"""\documentclass[10pt]{article}
+        r = r"""\documentclass[a4paper,10pt]{article}
 \usepackage{amsmath}
 \usepackage[utf8]{inputenc}
 \def\mybackslash{$\backslash$}

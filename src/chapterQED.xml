@@ -377,6 +377,44 @@ More to be added here...
 
 </section>
 <section>
+    <title>Low energy theories</title>
+<section>
+    <title>Fermi-type theory</title>
+<p>
+This is a low energy (<m>m_W^2 \gg m_\mu m_e</m>) model for the EW
+interactions, that can be derived for example from the muon decay:
+<e>\mu^- \to e^- +\nu_\mu + \bar \nu_e</e>
+From the SM the relevant Lagrangian is
+<e>
+\L = {g\over2\sqrt2}(\bar e \gamma^\mu (1-\gamma_5) \nu_e W^-_\mu)
++
+{g\over2\sqrt2}(\bar \mu \gamma^\mu (1-\gamma_5) \nu_\mu W^-_\mu)</e>
+and one gets the diagram <m>\mu^- +\bar\nu_\mu+ \to e^- + \bar \nu_e</m>
+and the corresponding matrix element:
+<e>
+iM = -i{g^2\over8}[\bar u\gamma_\mu (1-\gamma_5) u]
+{-g^{\mu\nu}+{q^\mu q^\nu\over m_W^2}\over q^2 - m_W^2}
+[\bar u\gamma_\nu (1-\gamma_5) v]
+</e>
+which when the momentum transfer <m>q</m> is much less than <m>m_w</m>
+becomes
+<e>
+iM = -i{g^2\over8m_W^2}[\bar u\gamma^\mu (1-\gamma_5) u]
+[\bar u\gamma_\mu (1-\gamma_5) v]
+</e>
+but this element can be derived directly from the Lagrangian:
+<e>
+\L = -{G_\mu\over\sqrt2}
+[\bar \psi_{\nu_\mu}\gamma^\mu (1-\gamma_5) \psi_\mu]
+[\bar \psi_e\gamma^\mu (1-\gamma_5) \psi_{\nu_e}]
+</e>
+with
+<e>
+{G_\mu\over\sqrt2} = {g^2\over8m_W^2}
+</e>
+</p>
+</section>
+<section>
 <title>QED</title>
 <p>
 The QED Lagrangian density is
@@ -585,4 +623,5 @@ potential <m>{\bf A}=(A_1, A_2, A_3)</m>:
 +V \right)\varphi\,.</e>
 </p>
 </section>
-    </section>
+</section>
+</section>

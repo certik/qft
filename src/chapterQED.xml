@@ -813,7 +813,7 @@ SM, where <m>\lambda=g\sin\theta_W</m>. Consider
 <e>
 \int\d^4 x_1 e^{-i p x_1}
 \int\d^4 y_1 \d^4 y_2 e^{+i(k y_1+l y_2)}\int\d^4 x
-(-i\lambda) S(y_2-x) \gamma^\mu S(y_1-x) D^\alpha_\mu(x_1-x) 
+(-i\lambda) S(y_2-x) \gamma^\mu S(y_1-x) D^\alpha_\mu(x_1-x)
     =
 </e>
 <e>
@@ -828,6 +828,58 @@ where we used the fact, that the only nonzero element of the Green function is
 </e>
 <e>
 =\pm S(y_2-x) \gamma^\mu S(y_1-x) D^\alpha_\mu(x_1-x)
+</e>
+</p>
+</section>
+<section>
+    <title>eeee interaction</title>
+<p>
+Let's calculate the <m>\L_{ee\gamma}=-\lambda \bar e\gamma^\mu e A_\mu</m> interaction in the
+SM, where <m>\lambda=g\sin\theta_W</m>. Consider
+<m>e^-(p_1)+e^+(p_2)\to\gamma(q)\to e^-(k_1)+e^+(k_2)</m>:
+<e>
+\braket{f|S|i}=
+\braket{f|iT|i}=
+\braket{k_1 k_2|iT|p_1p_2}=
+{\bar u(k_1) v(k_2)\over\tilde S(k_1)\tilde S(k_2)}
+{\bar v(p_2) u(p_1)\over\tilde S(p_2)\tilde S(p_1)}
+</e>
+<e>
+\int\d^4 x_1\d^4 x_2 e^{-i (p_1x_1 + p_2x_2)}
+\int\d^4 y_1\d^4 y_2 e^{+i (k_1y_1 + k_2y_2)}
+\braket{0|T\{\bar e(y_1) e(y_2) \bar e(x_1) e(x_2)\}|0}
+    =
+</e>
+<e>
+=
+{\bar u(k_1) v(k_2)\over\tilde S(k_1)\tilde S(k_2)}
+{\bar v(p_2) u(p_1)\over\tilde S(p_2)\tilde S(p_1)}
+</e>
+<e>
+\int\d^4 x_1\d^4 x_2 e^{-i (p_1x_1 + p_2x_2)}
+\int\d^4 y_1\d^4 y_2 e^{+i (k_1y_1 + k_2y_2)}
+\int\d^4 x \int\d^4 y
+</e>
+<e>
+(-i\lambda)^2 S(x_1-x)\gamma^\mu S(x_2-x) D_{\mu\nu}(x-y)S(y_1-y)\gamma^\nu S(y_2-y)
+    =
+</e>
+<e>
+=(2\pi)^4\delta^{(4)}(p_1+p_2-k_1-k_2)\bar v(p_2)(-i\lambda)\gamma^\mu
+u(p_1)\tilde D_{\mu\nu}(q=p_1+p_2=k_1+k_2) \bar u(k_1)(-i\lambda)\gamma^\nu v(k_2)
+</e>
+where we used the fact, that the only nonzero element of the Green function is
+<e>
+\int\d^4 x
+\int\d^4 y
+\braket{0|T\{\bar e(y_1) e(y_2) \bar e(x_1) e(x_2)
+\bar e(x)\gamma^\mu e(x) A_\mu(x)
+\bar e(y)\gamma^\nu e(y) A_\nu(y)
+\}|0}
+=
+</e>
+<e>
+=\pm S(x_1-x) \gamma^\mu S(x_2-x)D_{\mu\nu}(x-y)S(y_1-y)\gamma^\nu S(y_2-y)
 </e>
 </p>
 </section>

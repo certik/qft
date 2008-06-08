@@ -275,8 +275,21 @@ and
 -{1\over2}W^-_{\mu\nu}W^{+\mu\nu}
 -{1\over4}A_{\mu\nu}A^{\mu\nu}
 -{1\over4}Z_{\mu\nu}Z^{\mu\nu}
-+[\hbox{(5.79) - (5.84)]}
++\L_{WW\gamma}+L_{WWZ}+L_{WW\gamma\gamma}+L_{WWWW}+L_{WWZZ}+L_{WWZ\gamma}
 </e>
+Where <m>W^0_\mu = A^3_\mu=\cos\theta_W Z_\mu + \sin\theta_W A_\mu</m> and:
+<e>\L_{WW\gamma}=-ig\sin\theta_W(A_\mu W^-_\nu\overleftrightarrow\partial^\mu W^{+\nu}
++ \hbox{cycl. perm. ($A$ $W^-$ $W^+$)})</e>
+<e>\L_{WWZ}=-ig\cos\theta_W(Z_\mu W^-_\nu\overleftrightarrow\partial^\mu
+W^{+\nu}+\hbox{cycl. perm. ($Z$ $W^-$ $W^+$)})</e>
+<e>\L_{WW\gamma\gamma}=-g^2\sin^2\theta_W(W^-_\mu W^{+\mu}A_\nu A^\nu-
+    W^-_\mu A^\mu W^+_\nu A^\nu)</e>
+<e>\L_{WWWW}=\half g^2(W^-_\mu W^{-\mu}W^+_\nu W^{+\nu}
+    -W^-_\mu W^{+\mu}W^-_\nu W^{+\nu} )</e>
+<e>\L_{WWZZ}=-g^2\cos^2\theta_W(W^-_\mu W^{+\mu}Z_\nu Z^\nu
+    -W^-_\mu Z^\mu W^+_\nu Z^\nu )</e>
+<e>\L_{WWZ\gamma}=g^2\sin\theta_W\cos\theta_W(-2W^-_\mu W^{+\mu}A_\nu
+    Z^\nu+W^-_\mu Z^\mu W^+_\nu A^\nu+W^-_\mu A^\mu W^+_\nu Z^\nu)</e>
 </section>
 <section>
     <title>GWS Lagrangian</title>
@@ -299,7 +312,7 @@ Plugging everything together we get the GWS Lagrangian:
 -{1\over2}W^-_{\mu\nu}W^{+\mu\nu}
 -{1\over4}A_{\mu\nu}A^{\mu\nu}
 -{1\over4}Z_{\mu\nu}Z^{\mu\nu}
-+[\hbox{(5.79) - (5.84)]}
++\L_{WW\gamma}+L_{WWZ}+L_{WW\gamma\gamma}+L_{WWWW}+L_{WWZZ}+L_{WWZ\gamma}
 </e>
 <e>
 +i\bar\nu_L\gamma^\mu\partial_\mu\nu_L+i\bar e \gamma^\mu\partial_\mu e
@@ -349,9 +362,52 @@ comparing to the above:
 </e>
 we get
 <e> m_W = \half g v</e>
-<e> m_Z = {gv\over2\cos\theta_W}={m_W\over\cos\theta}</e>
+<e> m_Z = {gv\over2\cos\theta_W}={m_W\over\cos\theta_W}</e>
 <e> m_H = v\sqrt{2\lambda}</e>
 <e> m_e = {1\over\sqrt2}h_ev</e>
+</p>
+</section>
+
+<section>
+    <title>Dimensional Analysis</title>
+<p>
+The evolution operator is dimensionless:
+<e>U(-\infty,\infty)
+= T\exp\left({i\over\hbar}\int_{-\infty}^{\infty}\d^4 x \L(x) \right)
+</e>
+So:
+<e>
+\left[\int_{-\infty}^{\infty}\d^4 x \L(x) \right] = [\hbar] = 0
+</e>
+then
+<e>
+[\L(x)] = 4
+</e>
+For the particular forms of the Lagrangians above we get:
+<e>
+[m\bar ee] = [m^2 Z_\mu Z^\mu] = [m^2 H^2] =
+[i\bar e\gamma^\mu\partial_\mu e] = [\L] = 4
+</e>
+so <m>[\bar ee] = 3</m>, <m>[Z_\mu Z^\mu]=[H^2] = 2</m> and we get
+<e> [e] = [\bar e] = {3\over2} </e>
+<e> [Z_\mu] = [Z^\mu] = [H] = [\partial_\mu] = [\partial^\mu] = 1 </e>
+</p>
+<p>
+Example: what is the dimension of <m>G_\mu</m> in
+<m>
+\L = -{G_\mu\over\sqrt2}
+[\bar \psi_{\nu_\mu}\gamma^\mu (1-\gamma_5) \psi_\mu]
+[\bar \psi_e\gamma^\mu (1-\gamma_5) \psi_{\nu_e}]
+</m>? Answer:
+<e>
+[\L] = [G_\mu \bar\psi\psi\bar\psi\psi]
+</e>
+<e>
+4 = [G_\mu] 6
+</e>
+<e>
+[G_\mu] = -2
+</e>
 </p>
 </section>
 

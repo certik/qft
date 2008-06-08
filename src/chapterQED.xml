@@ -577,11 +577,12 @@ Let's see how it goes for <m>\L=-{\lambda\over4}\phi^4</m> for the process
 $\tilde D(\cdots)$s})+(-i\lambda)^2(\cdots)+\cdots\right]=
 </e>
 <e>
-= (-i\lambda) 6(2\pi)^4\delta^{(4)}(p_1+p_2-k_1-k_2)+
-(-i\lambda)^2(\cdots)+\cdots
+= (2\pi)^4\delta^{(4)}(p_1+p_2-k_1-k_2)\left[6(-i\lambda)+
+3(-i\lambda)^2\int{\d^4 k\over (2\pi)^4}\tilde D(k)\tilde D(p1+p2-k)
++(-i\lambda)^3(\cdots)+\cdots\right]
 </e>
 The denominator cancels with the disconnected terms. We used the Wick
-contractions:
+contractions (see below for a thorough explanation+derivation):
 <e>
 \braket{0|T\{\phi_I(x_1)\phi_I(x_2)\phi_I(y_1)\phi_I(y_2)\}|0}=
 D(x_1-x_2)D(y_1-y_2)+D(x_2-y_1)D(x_1-y_2)+D(x_2-y_2)D(x_1-y_1)
@@ -591,10 +592,108 @@ D(x_1-x_2)D(y_1-y_2)+D(x_2-y_1)D(x_1-y_2)+D(x_2-y_2)D(x_1-y_1)
 \phi_I^4(x)\}|0}=
 D(x_1-x)D(x_2-x)D(y_1-x)D(y_2-x)+\hbox{disconnected}
 </e>
+<e>
+\braket{0|T\{\phi_I(x_1)\phi_I(x_2) \phi_I(y_1)\phi_I(y_2)
+\phi_I^4(x)\phi_I^4(y)\}|0}=
+D(x_1-x)D(x_2-x)D(y_1-y)D(y_2-y)D(x-y)D(x-y)
+</e>
+<e>
++\hbox{disconnected}
+</e>
 Where the "disconnected" terms are <m>D(x_1-y_1)D(x_2-y_2)D(x-x)D(x-x)</m> and
 similar. When they are integrated over, they do not generate enough <m>\tilde
     D(p_1)</m> propagators to cancel the propagators from the LSZ formula,
 which will cause the terms to vanish.
+</p>
+<p>
+For the <m>\L=\phi^3(x)</m> theory, one also needs the following contractions:
+<e>
+\braket{0|T\{\phi_I(x_1)\phi_I(x_2) \phi_I(y_1)\phi_I(y_2)
+\phi_I^3(x)\}|0} = 0
+</e>
+<e>
+\braket{0|T\{\phi_I(x_1)\phi_I(x_2) \phi_I(y_1)\phi_I(y_2)
+\phi_I^3(x)\phi_I^3(y)\}|0} = D(x_1-x)D(x_2-x)D(x-y)D(y_1-y)D(y_2-y)
+</e>
+Thus it is clear that the only difference from the above is the factor
+<m>D(x-y)</m> which after integrating changes to <m>\tilde D(p_1+p_2)</m> and
+this ends up in the final result.
+</p>
+<p>
+One always gets the delta function in the result, so we define the matrix
+element <m>\M_{fi}</m> by:
+<e>
+S_{fi} = (2\pi)^4\delta^{(4)}(p_1+p_2+\cdots - k_1 - k_2 - \cdots) i \M_{fi}
+</e>
+</p>
+</section>
+<section>
+    <title>Wick Theorem</title>
+<p>
+As seen above, we need to be able to calculate
+<e>\braket{0|T\{\phi_I(x_1)\cdots\phi_I(x_n)\}|0}
+</e>
+The Wick theorem says, that this is equal to all possible contractions of
+fields (all fields need to be contracted), where a contraction is defined as:
+<e>\braket{0|T\{\phi_I(x)\phi_I(y)\}|0}\equiv D(x-y)=
+\int {\d^4 p\over (2\pi)^4}\tilde D(p) e^{-ip(x-y)}
+</e>
+with
+<e>
+\tilde D(p) = {i\over p^2-m^2+i\epsilon}
+</e>
+A few lowest possibilities:
+<e>\braket{0|T\{\phi_I(x_1)\}|0}= 0</e>
+<e>\braket{0|T\{\phi_I(x_1)\phi_I(x_2)\}|0}= D_{12}</e>
+<e>\braket{0|T\{\phi_I(x_1)\phi_I(x_2)\phi_I(x_3)\}|0}= 0</e>
+<e>\braket{0|T\{\phi_I(x_1)\phi_I(x_2)\phi_I(x_3)\phi_I(x_4)\}|0}=
+    \hbox{disconnected}</e>
+<e>\braket{0|T\{\phi_I(x_1)\phi_I(x_2)\phi_I(x_3)\phi_I(x_4)\phi_I(x)\}|0}=
+0</e>
+<e>\braket{0|T\{\phi_I(x_1)\phi_I(x_2)\phi_I(x_3)\phi_I(x_4)\phi_I^2(x)\}|0}=
+\hbox{disconnected}</e>
+<e>\braket{0|T\{\phi_I(x_1)\phi_I(x_2)\phi_I(x_3)\phi_I(x_4)\phi_I^3(x)\}|0}=
+0</e>
+<e>\braket{0|T\{\phi_I(x_1)\phi_I(x_2)\phi_I(x_3)\phi_I(x_4)\phi_I^4(x)\}|0}=
+4!\,D(x_1-x)D(x_2-x)D(x_3-x)D(x_4-x)+\hbox{disconnected}</e>
+<e>\braket{0|T\{\phi_I(x_1)\phi_I(x_2)\phi_I(x_3)\phi_I(x_4)\phi_I^3(x)\phi_I^3(y)\}|0}=</e>
+<e>
+=D(x_1-x)D(x_2-x)D(x-y)D(x_3-y)D(x_4-y) + \hbox{disconnected}
+</e>
+<e>\braket{0|T\{\phi_I(x_1)\phi_I(x_2)\phi_I(x_3)\phi_I(x_4)\phi_I^4(x)\phi_I^4(y)\}|0}=
+</e>
+<e>
+=D(x_1-x)D(x_2-x)D(x-y)D(x-y)D(x_3-y)D(x_4-y) + \hbox{disconnected}
+</e>
+For the last two equations, not all possibilities of the connected graphs are
+listed (and also the combinatorial factor is omitted).
+</p>
+</section>
+<section>
+    <title>Fermions and Vector Bosons</title>
+<p>
+For fermions:
+<e>\braket{0|T\{\psi_I(x)\bar\psi_I(y)\}|0}\equiv S(x-y)=
+\int {\d^4 p\over (2\pi)^4}\tilde S(p) e^{-ip(x-y)}
+</e>
+with
+<e>
+\tilde S(p) = {i\over \fslash{p} - m +i\epsilon}=
+{i(\fslash{p}+m)\over p^2-m^2+i\epsilon}
+</e>
+For vector bosons:
+<e>\braket{0|T\{A_\mu(x)A_\nu(y)\}|0}\equiv D_{\mu\nu}(x-y)=
+\int {\d^4 p\over (2\pi)^4}\tilde D_{\mu\nu}(p) e^{-ip(x-y)}
+</e>
+with
+<e>
+\tilde D_{\mu\nu}(p) = i{-g_{\mu\nu}+{p_\mu p_\nu\over m^2}\over p^2-m^2+i\epsilon}
+</e>
+For massless bosons:
+<e>
+\tilde D_{\mu\nu}(p) = i{-g_{\mu\nu}\over p^2+i\epsilon}
+</e>
+
 </p>
 </section>
 </section>

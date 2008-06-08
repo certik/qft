@@ -443,12 +443,13 @@ The evolution operator <m>U</m> is defined by the equations:
 <e>i\hbar{\partial U(t, t_1)\over\partial t} = H(t)U(t, t_1)</e>
 <e>U(t_1, t_1) = 1</e>
 We are interested in calculating the S matrix elements:
-<e>S_{fi} = \braket{f|U(-\infty,\infty)|i}</e>
-so we first calculate <m>U(-\infty,\infty)</m>. Integrating:
+<e>\braket{f|U(-\infty,\infty)|i}=\braket{f|S|i}=S_{fi}</e>
+so we first calculate <m>U(-\infty,\infty)</m>. Integrating the equation for
+the evolution operator:
 <e>U(t_2, t_1)=U(t_1, t_1)-{i\over\hbar}\int_{t_1}^{t_2} H(t)U(t, t_1)\d t
 =1-{i\over\hbar}\int_{t_1}^{t_2} H(t)U(t, t_1)\d t</e>
 Now:
-<e>U(-\infty,\infty)
+<e>S=U(-\infty,\infty)
 =1-{i\over\hbar} \int_{-\infty}^{\infty} H(t')U(t', -\infty)\d t'=
 </e>
 <e>
@@ -475,8 +476,8 @@ If <m>\L</m> doesn't contain derivatives of the fields, then
 <p>
 Let's write <m>S=1+iT</m> and <m>\ket{i}=\ket{k_1\cdots k_m}</m>,
 <m>\ket{f}=\ket{p_1\cdots p_n}</m>. As a first step now, let's investigate a
-scalar field, e.g. <m>\L=\lambda\phi^4</m> (e.g. a Higgs self interaction term
-above), we'll look at other fields
+scalar field, e.g. <m>\L=-{\lambda\over4}\phi^4</m> (e.g. a Higgs self
+interaction term above), we'll look at other fields
 later:
 <e>
 \braket{f|S|i}=
@@ -501,10 +502,99 @@ where
 \braket{0|T\exp\left({i\over\hbar}\int_{-\infty}^{\infty}\d^4 x \L(x) \right)|0}
 }
 </e>
+This is called the LSZ formula.
 Now we use the Wick contraction, get some terms like <m>D_{23}D_{34}</m>
 integrate things out, this will give the delta function and <m>\tilde
     D(p)</m>'s
 and that's it.
+</p>
+<p>
+Let's see how it goes for <m>\L=-{\lambda\over4}\phi^4</m> for the process
+<m>k_1+k_2\to p_1+p_2</m>:
+<e>
+\braket{p_1 p_2|S|k_1 k_2} = {\int\d^4 x_1\d^4 x_2 e^{-i(k_1x_1+k_2x_2)}
+\int\d^4 y_1\d^4 y_2 e^{-i(p_1y_1+p_2y_2)}
+\over \tilde D(k_1)\tilde D(k_2)
+\tilde D(p_1)\tilde D(p_2)}
+</e>
+<e>
+{\braket{0|T\{\phi_I(x_1)\phi_I(x_2)\phi_I(y_1)\phi_I(y_2)\exp\left(
+-{i\lambda\over4\hbar} \int\d^4 x \phi_I^4(x)  \right)\}|0}
+\over
+\braket{0|T\exp\left(-{i\lambda\over4\hbar}\int\d^4 x \phi_I^4(x) \right)|0}
+}=
+</e>
+<e>
+= {\int\d^4 x_1\d^4 x_2 e^{-i(k_1x_1+k_2x_2)}
+\int\d^4 y_1\d^4 y_2 e^{-i(p_1y_1+p_2y_2)}
+\over \tilde D(k_1)\tilde D(k_2)
+\tilde D(p_1)\tilde D(p_2)}
+</e>
+<e>\left[
+{
+\braket{0|T\{\phi_I(x_1)\phi_I(x_2)\phi_I(y_1)\phi_I(y_2)\}|0}
+\over
+\braket{0|T\exp\left(-{i\lambda\over4\hbar}\int\d^4 x \phi_I^4(x) \right)|0}
+}\right.
++
+</e>
+<e>
++{
+\left(-{i\lambda\over4\hbar}\right)\int\d^4 x
+\braket{0|T\{\phi_I(x_1)\phi_I(x_2) \phi_I(y_1)\phi_I(y_2)
+\phi_I^4(x)\}|0}
+\over
+\braket{0|T\exp\left(-{i\lambda\over4\hbar}\int\d^4 x \phi_I^4(x) \right)|0}
+}
++
+</e>
+<e>\left.
++{
+\left(-{i\lambda\over4\hbar}\right)^2\int\d^4 x\,\d^4 y
+\braket{0|T\{\phi_I(x_1)\phi_I(x_2) \phi_I(y_1)\phi_I(y_2)
+\phi_I^4(x)\phi_I^4(y)\}|0}
+\over
+\braket{0|T\exp\left(-{i\lambda\over4\hbar}\int\d^4 x \phi_I^4(x) \right)|0}
+}
++\cdots\right]=
+</e>
+<e>
+= {
+1
+\over \tilde D(k_1)\tilde D(k_2)
+\tilde D(p_1)\tilde D(p_2)}
+</e>
+<e>
+    \left[ (2\pi)^4 \delta^{(4)}(p_1+p_2)(2\pi)^4 \delta^{(4)}(k_1+k_2)\tilde D(p_1)
+\tilde D(k_1)+\right.
+</e>
+<e>
+    (-i\lambda)6(2\pi)^4\delta^{(4)}(p_1+p_2-k_1-k_2)\tilde D(k_1)\tilde D(k_2)
+\tilde D(p_1)\tilde D(p_2)+
+</e>
+<e>\left.
+(-i\lambda)(\hbox{disconnected terms with not enough
+$\tilde D(\cdots)$s})+(-i\lambda)^2(\cdots)+\cdots\right]=
+</e>
+<e>
+= (-i\lambda) 6(2\pi)^4\delta^{(4)}(p_1+p_2-k_1-k_2)+
+(-i\lambda)^2(\cdots)+\cdots
+</e>
+The denominator cancels with the disconnected terms. We used the Wick
+contractions:
+<e>
+\braket{0|T\{\phi_I(x_1)\phi_I(x_2)\phi_I(y_1)\phi_I(y_2)\}|0}=
+D(x_1-x_2)D(y_1-y_2)+D(x_2-y_1)D(x_1-y_2)+D(x_2-y_2)D(x_1-y_1)
+</e>
+<e>
+\braket{0|T\{\phi_I(x_1)\phi_I(x_2) \phi_I(y_1)\phi_I(y_2)
+\phi_I^4(x)\}|0}=
+D(x_1-x)D(x_2-x)D(y_1-x)D(y_2-x)+\hbox{disconnected}
+</e>
+Where the "disconnected" terms are <m>D(x_1-y_1)D(x_2-y_2)D(x-x)D(x-x)</m> and
+similar. When they are integrated over, they do not generate enough <m>\tilde
+    D(p_1)</m> propagators to cancel the propagators from the LSZ formula,
+which will cause the terms to vanish.
 </p>
 </section>
 </section>

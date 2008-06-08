@@ -762,7 +762,7 @@ SM, where <m>\lambda={h_e\over\sqrt2}</m>. Consider
 <e>
 \int\d^4 x_1 e^{-i p x_1}
 \int\d^4 y_1 \d^4 y_2 e^{+i(k y_1+l y_2)}
-\braket{0|T\bar e(y_1) e(y_2) H(x_1)\}|0}
+\braket{0|T\{\bar e(y_1) e(y_2) H(x_1)\}|0}
     =
 </e>
 <e>
@@ -783,6 +783,51 @@ where we used the fact, that the only nonzero element of the Green function is
 <e>
 \int\d^4 x
 \braket{0|T\{\bar e(y_1) e(y_2) H(x_1)\bar e(x)e(x) H(x)\}|0}
+</e>
+</p>
+</section>
+<section>
+    <title>ee gamma interaction</title>
+<p>
+Let's calculate the <m>\L_{ee\gamma}=-\lambda \bar e\gamma^\mu e A_\mu</m> interaction in the
+SM, where <m>\lambda=g\sin\theta_W</m>. Consider
+<m>\gamma(p)\to e^-(k)+e^+(l)</m>:
+<e>
+\braket{f|S|i}=
+\braket{f|iT|i}=
+\braket{k l|iT|p}=
+{\bar u(k) v(l)\over\tilde S(k)\tilde S(l)}
+{\varepsilon_\mu(p)\over\tilde D_{\alpha\beta}(p)}
+</e>
+<e>
+\int\d^4 x_1 e^{-i p x_1}
+\int\d^4 y_1 \d^4 y_2 e^{+i(k y_1+l y_2)}
+\braket{0|T\{\bar e(y_1) e(y_2) A^\mu(x_1)\}|0}
+    =
+</e>
+<e>
+=
+{\bar u(k) v(l)\over\tilde S(k)\tilde S(l)}
+{\varepsilon_\mu(p)\over\tilde D_{\alpha\beta}(p)}
+</e>
+<e>
+\int\d^4 x_1 e^{-i p x_1}
+\int\d^4 y_1 \d^4 y_2 e^{+i(k y_1+l y_2)}\int\d^4 x
+(-i\lambda) S(y_2-x) \gamma^\mu S(y_1-x) D^\alpha_\mu(x_1-x) 
+    =
+</e>
+<e>
+=(2\pi)^4\delta^{(4)}(p-k-l)\bar u(k)(-i\lambda)\gamma^\mu
+v(l)\varepsilon_\mu(p)
+</e>
+where we used the fact, that the only nonzero element of the Green function is
+<e>
+\int\d^4 x
+\braket{0|T\{\bar e(y_1) e(y_2) A^\alpha(x_1)\bar e(x)\gamma^\mu e(x) A_\mu(x)\}|0}
+=
+</e>
+<e>
+=\pm S(y_2-x) \gamma^\mu S(y_1-x) D^\alpha_\mu(x_1-x)
 </e>
 </p>
 </section>

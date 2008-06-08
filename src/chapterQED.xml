@@ -714,7 +714,7 @@ SM, where <m>\lambda={g^2\over4\cos\theta_W}</m>. Consider
 \braket{f|S|i}=
 \braket{f|iT|i}=
 \braket{k l|iT|p}=
-{\varepsilon_\alpha(k)\varepsilon^\alpha(l)\over\tilde D_{\mu\nu}(k)\cdots\tilde
+{\varepsilon_\alpha(k)\varepsilon^\alpha(l)\over\tilde D_{\mu\nu}(k)\tilde
 D^{\mu\nu}(l)}
 {1\over\tilde D(p)}
 </e>
@@ -726,14 +726,14 @@ D^{\mu\nu}(l)}
 </e>
 <e>
 =
-{\varepsilon_\alpha(k)\varepsilon^\alpha(l)\over\tilde D_{\mu\nu}(k)\cdots\tilde
+{\varepsilon_\alpha(k)\varepsilon^\alpha(l)\over\tilde D_{\mu\nu}(k)\tilde
 D^{\mu\nu}(l)}
 {1\over\tilde D(p)}
 </e>
 <e>
 \int\d^4 x_1 e^{-i p x_1}
 \int\d^4 y_1 \d^4 y_2 e^{+i(k y_1+l y_2)}\int\d^4 x
-i\lambda D_{\alpha\mu}(x_2-x)D^{\alpha\mu}(x_3-x)D(x_1-x)
+i\lambda D_{\alpha\mu}(y_1-x)D^{\alpha\mu}(y_2-x)D(x_1-x)
     =
 </e>
 <e>
@@ -742,7 +742,47 @@ i\lambda D_{\alpha\mu}(x_2-x)D^{\alpha\mu}(x_3-x)D(x_1-x)
 where we used the fact, that the only nonzero element of the Green function is
 <e>
 \int\d^4 x
-\braket{0|T\{Z_\mu(y_1) Z^\mu(y_2) H(x_1)Z_\mu(x)Z^\mu(x) H(x)\}|0}
+\braket{0|T\{Z_\alpha(y_1) Z^\alpha(y_2) H(x_1)Z_\mu(x)Z^\mu(x) H(x)\}|0}
+</e>
+</p>
+</section>
+<section>
+    <title>eeH interaction</title>
+<p>
+Let's calculate the <m>\L_{eeH}=-\lambda \bar ee H</m> interaction in the
+SM, where <m>\lambda={h_e\over\sqrt2}</m>. Consider
+<m>H(p)\to e^-(k)+e^+(l)</m>:
+<e>
+\braket{f|S|i}=
+\braket{f|iT|i}=
+\braket{k l|iT|p}=
+{\bar u(k) v(l)\over\tilde S(k)\tilde S(l)}
+{1\over\tilde D(p)}
+</e>
+<e>
+\int\d^4 x_1 e^{-i p x_1}
+\int\d^4 y_1 \d^4 y_2 e^{+i(k y_1+l y_2)}
+\braket{0|T\bar e(y_1) e(y_2) H(x_1)\}|0}
+    =
+</e>
+<e>
+=
+{\bar u(k) v(l)\over\tilde S(k)\tilde S(l)}
+{1\over\tilde D(p)}
+</e>
+<e>
+\int\d^4 x_1 e^{-i p x_1}
+\int\d^4 y_1 \d^4 y_2 e^{+i(k y_1+l y_2)}\int\d^4 x
+(-i\lambda) S(y_1-x)S(y_2-x)D(x_1-x)
+    =
+</e>
+<e>
+=(-i\lambda)(2\pi)^4\delta^{(4)}(p-k-l)\bar u(k) v(l)
+</e>
+where we used the fact, that the only nonzero element of the Green function is
+<e>
+\int\d^4 x
+\braket{0|T\{\bar e(y_1) e(y_2) H(x_1)\bar e(x)e(x) H(x)\}|0}
 </e>
 </p>
 </section>

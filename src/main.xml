@@ -2,12 +2,8 @@
 
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
-  <!ENTITY intro SYSTEM "intro.xml">
+  <!ENTITY chapterQFT SYSTEM "chapterQFT.xml">
   <!ENTITY chapterQED SYSTEM "chapterQED.xml">
-  <!ENTITY chapterDFT SYSTEM "chapterDFT.xml">
-  <!ENTITY chapterFEM SYSTEM "chapterFEM.xml">
-  <!ENTITY chapterpseudo SYSTEM "chapterpseudo.xml">
-  <!ENTITY appendix SYSTEM "appendix.xml">
   <!ENTITY ssharp "&#223;">
   <!ENTITY ouml "&#246;">
   <!ENTITY uuml "&#252;">
@@ -21,5 +17,6 @@
             \input macros.tex
         </mathinclude>
     </articleinfo>
+    &chapterQFT;
     &chapterQED;
 </article>

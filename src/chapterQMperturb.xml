@@ -8,7 +8,7 @@ eigenvalue problem has been solved:
 <e>H^0\ket{n^0}=E^0_n\ket{n^0}</e>
 and <m>H^1(t)</m> is a small time-dependent perturbation. <m>\ket{n^0}</m> form
 a complete basis, so we can express <m>\ket{\psi(t)}</m> in this basis:
-<e>\ket{\psi(t)} = \sum_n d_n(t)e^{-{i\over\hbar}E^0_n t}\ket{n^0}</e>
+<e id="psi">\ket{\psi(t)} = \sum_n d_n(t)e^{-{i\over\hbar}E^0_n t}\ket{n^0}</e>
 Substituting this into <a ref="schroed"/>, we get:
 <e>\sum_n\left(
 i\hbar{\d\over\d t} d_n(t)+E^0_n d_n(t)
@@ -182,6 +182,27 @@ d_f(0)
 (E_n^0-E_i^0)(E_f^0-E_i^0)
 }
 </e>
+Substituting this into <a ref="psi"/> evaluated for <m>t=0</m>:
+<e>
+\ket{\psi(0)}=\sum_n d_n(0) \ket{n^0}=
+</e>
+<e>
+= \ket{i^0}-
+\sum_n
+{\ket{n^0}\braket{n^0|H^1|i^0}\over E_n^0-E_i^0}
++
+</e>
+<e>
++
+\sum_{n,m}
+{\ket{n^0}
+\braket{n^0|H^1|m^0}
+\braket{m^0|H^1|i^0}
+\over
+(E_m^0-E_i^0)(E_n^0-E_i^0)
+}
+</e>
+The sum <m>\sum_n</m> is over all <m>n\neq i</m>, similarly for the other sum.
 </p>
 </section>
 </section>

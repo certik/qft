@@ -28,8 +28,8 @@ F^{\nu\mu}=-ej^\mu</m>) with a source <m>j^\mu=c\bar\psi\gamma^\mu\psi</m>, whic
 <p>
 The fields <m>\psi</m> and <m>A^\mu</m> are quantized. The first approximation is that we
 take <m>\psi</m> as a wavefunction, that is, it is a classical 4-component field. It
-can be shown that this corresponds to taking three orders in the perturbation
-theory.
+can be shown that this corresponds to taking the tree diagrams in the
+perturbation theory.
 </p>
 <p>
 The first component <m>A_0</m> of the 4-potential is the electric potential, and

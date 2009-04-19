@@ -63,4 +63,76 @@ The SI units are useful for checking that the <m>c</m>, <m>e</m> and
 <m>\hbar</m> constants are at correct places in the expression.
 </p>
 </section>
+
+<section>
+    <title>Tensors in QFT</title>
+<p>
+In general, the covariant and contravariant vectors and tensors work just like
+in general relativity. We use the metric <m>g_{\mu\nu}={\rm diag}(1, -1, -1,
+-1)</m> (e.g. signature -2, but it's possible to also use the metric with
+signature +2).
+
+The four potential <m>A^\mu</m> is given by:
+<e>A^\mu=\left({\phi\over c}, {\bf A}\right) = (A^0, A^1, A^2, A^3)</e>
+where <m>\phi</m> is the electrostatic potential. Whenever we write <m>\bf
+A</m>, the components of it are given by the upper indices, e.g. <m>{\bf
+A}=(A^1, A^2, A^3)</m>.
+The components with lower indices can be calculated using the metric tensor, so
+it depends on the signature convention:
+<e>A_\mu=g_{\mu\nu}A^\nu=(A^0, -{\bf A}) = (A^0, -A^1, -A^2, -A^3)</e>
+In our case we got <m>A_0=A^0</m> and <m>A_i = -A^i</m> (if we used the other
+signature convention, then the sign of <m>A_0</m> would differ and <m>A_i</m>
+would stay the same).
+</p>
+<p>
+Gradient is defined as:
+<e>\partial_\mu = (\partial_0, \partial_1, \partial_2, \partial_3)=
+\left({1\over c}{\partial\over\partial t},{\partial\over\partial
+x},{\partial\over\partial y},{\partial\over\partial z}\right)
+</e>
+the upper indices depend on the signature, e.g. for -2:
+<e>\partial^\mu = (\partial^0, \partial^1, \partial^2, \partial^3)=
+\left({1\over c}{\partial\over\partial t},-{\partial\over\partial
+x},-{\partial\over\partial y},-{\partial\over\partial z}\right)
+</e>
+and +2:
+<e>\partial^\mu = (\partial^0, \partial^1, \partial^2, \partial^3)=
+\left(-{1\over c}{\partial\over\partial t},{\partial\over\partial
+x},{\partial\over\partial y},{\partial\over\partial z}\right)
+</e>
+</p>
+<p>
+Momentum (<m>{\bf p}=-i\hbar\nabla</m>) and energy
+(<m>E=i\hbar{\partial\over\partial t}</m>) is combined into 4-momentum as
+<e>p^\mu
+= \left({E\over c},{\bf p}\right)
+= i\hbar\left({1\over c}{\partial\over\partial t},-\nabla\right)
+= i\hbar\left(\partial_0,-\partial_j\right)
+= i\hbar\left(\partial^0,\partial^j\right)
+= i\hbar\partial^\mu
+</e>
+<e>p_\mu
+= g_{\mu\nu}p^\nu
+= i\hbar\left(\partial^0,-\partial^j\right)
+= i\hbar\left(\partial_0,\partial_j\right)
+= i\hbar\partial_\mu
+</e>
+Note: for the signature +2, we would get <m>p^\mu=-i\hbar\partial^\mu</m> and
+<m>p_\mu=-i\hbar\partial_\mu</m>.
+</p>
+<p>
+For the minimal coupling
+<m>D_\mu = \partial_\mu + {i\over\hbar}e A_\mu</m> we get:
+<e>D^0 = \partial^0 + {i\over\hbar}e A^0</e>
+<e>D^j = \partial^j + {i\over\hbar}e A^j=-{i\over\hbar}(i\hbar\partial^j-eA^j)
+=-{i\over\hbar}({\bf p}-e{\bf A})</e>
+and for the lower indices:
+<e>D_0 = \partial_0 + {i\over\hbar}e A_0</e>
+<e>D_j = \partial_j + {i\over\hbar}e A_j=-{i\over\hbar}(i\hbar\partial_j-eA_j)
+={i\over\hbar}(i\hbar\partial^j-eA^j)
+={i\over\hbar}({\bf p}-e{\bf A})
+</e>
+</p>
+</section>
+
 </section>

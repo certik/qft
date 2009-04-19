@@ -100,15 +100,16 @@ for calculating the <m>d_n(t)</m> coefficients.
 <section>
     <title>Time Independent Perturbation Theory</title>
 <p>
-As a special case, if <m>H^1</m> doesn't depend on time, the formula for
-<m>d_n(t)</m> simplifies. Let's take
-<e>H(t) = H^0 + e^{t/\tau} H^1</e>
-so at the time <m>t_1=-\infty</m> the Hamiltonian <m>H(t)=H^0</m> is
-unperturbed and we are interested in the time <m>t=0</m>, when the Hamiltonian
-becomes <m>H(t) = H^0 + H^1</m> (the coefficients <m>d_n(t)</m> will still
-depend on the <m>\tau</m> variable) and we do the limit <m>\tau\to\infty</m>
-(this corresponds to smoothly applying the perturbation <m>H^1</m> at the time
-negative infinity).
+As a special case, if <m>H^1</m> doesn't depend on time, the coefficients
+<m>d_n(t)</m> simplify, so we calculate them in this section explicitly. Let's
+take
+<e>H(t) = H^0 + e^{t/\tau}
+H^1</e> so at the time <m>t_1=-\infty</m> the Hamiltonian <m>H(t)=H^0</m>
+is unperturbed and we are interested in the time <m>t=0</m>, when the
+Hamiltonian becomes <m>H(t) = H^0 + H^1</m> (the coefficients <m>d_n(t)</m>
+will still depend on the <m>\tau</m> variable) and we do the limit
+<m>\tau\to\infty</m> (this corresponds to smoothly applying the perturbation
+<m>H^1</m> at the time negative infinity).
 </p>
 <p>
 Let's calculate <m>d_f(0)</m>:

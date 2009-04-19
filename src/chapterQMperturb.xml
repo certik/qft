@@ -1,0 +1,82 @@
+<section>
+    <title>Perturbation Theory</title>
+<p>
+We want to solve the equation:
+<e id="schroed"> i\hbar{\d \over\d t}\ket{\psi(t)}=H(t)\ket{\psi(t)} </e>
+with <m>H(t) = H^0 + H^1(t)</m>, where <m>H^0</m> is time-independent part whose
+eigenvalue problem has been solved:
+<e>H^0\ket{n^0}=E^0_n\ket{n^0}</e>
+and <m>H^1(t)</m> is a small time-dependent perturbation. <m>\ket{n^0}</m> form
+a complete basis, so we can express <m>\ket{\psi(t)}</m> in this basis:
+<e>\ket{\psi(t)} = \sum_n d_n(t)e^{-{i\over\hbar}E^0_n t}\ket{n^0}</e>
+Substituting this into <a ref="schroed"/>, we get:
+<e>\sum_n\left(
+i\hbar{\d\over\d t} d_n(t)+E^0_n d_n(t)
+\right)e^{-{i\over\hbar}E^0_n t}\ket{n^0}
+=\sum_n\left(
+E^0_n d_n(t)
++H^1 d_n(t)
+\right)e^{-{i\over\hbar}E^0_n t}\ket{n^0}
+</e>
+so:
+<e>\sum_n
+i\hbar{\d\over\d t}\left( d_n(t)\right)
+e^{-{i\over\hbar}E^0_n t}\ket{n^0}
+=\sum_n
+d_n(t)
+e^{-{i\over\hbar}E^0_n t}H^1\ket{n^0}
+</e>
+Choosing some particular state <m>\ket{f^0}</m> of the <m>H^0</m> Hamiltonian,
+we multiply the equation from the left by
+<m>\bra{f^0}e^{{i\over\hbar}E^0_f t}</m>:
+<e>\sum_n
+i\hbar{\d\over\d t}\left( d_n(t)\right)e^{i w_{fn} t}
+\braket{f^0|n^0}
+=\sum_n
+d_n(t)
+e^{i w_{fn} t}\braket{f^0|H^1|n^0}
+</e>
+where <m>w_{fn}={E^0_f - E^0_n\over \hbar}</m>. Using
+<m>\braket{f^0|n^0}=\delta_{fn}</m>:
+<e id="perturb0">
+i\hbar{\d\over\d t}d_f(t)
+=\sum_n
+d_n(t)
+e^{i w_{fn} t}\braket{f^0|H^1|n^0}
+</e>
+
+Let the initial wavefunction at time <m>t_1</m> be some particular state
+<m>\ket{\psi(t_1)}=\ket{i^0}</m> of the unperturbed Hamiltonian, then
+<m>d_n(t_1)=\delta_{ni}</m>.
+</p>
+<p>
+In the zeroth order of the perturbation theory, we set <m>H^1(t)=0</m> and
+we get <m>{\d\over\d t}d_f(t)=0</m>, so <m>d_n(t)=d_n(t_1)</m> (i.e. the
+coefficients <m>d_n</m> change with time only if <m>H^1</m> is nonzero). In our
+case we have <m>d_n(t_1)=\delta_{ni}</m>, so (for all <m>f</m>):
+<e>d_f(t)=\delta_{fi}</e></p>
+<p>
+In the first order of the perturbation theory, we take the solution
+<m>d_n(t)=\delta_{ni}</m> obtained in the zeroth order and substitute into the
+right hand side of <a
+    ref="perturb0"/>:
+<e>
+i\hbar{\d\over\d t}d_f(t)
+=\sum_n
+\delta_{ni}
+e^{i w_{fn} t}\braket{f^0|H^1|n^0}
+= e^{i w_{fi} t}\braket{f^0|H^1|i^0}
+</e>
+Integrating from <m>t_1</m> to <m>t</m>:
+<e>
+i\hbar(d_f(t)-d_f(t_1))
+= \int_{t_1}^{t} e^{i w_{fi} t'}\braket{f^0|H^1(t')|i^0}\d t'
+</e>
+using <m>d_f(t_1)=\delta_{fi}</m>:
+<e>
+d_f(t)
+= \delta_{fi}
+-{i\over\hbar}\int_{t_1}^{t} e^{i w_{fi} t'}\braket{f^0|H^1(t')|i^0}\d t'
+</e>
+</p>
+</section>

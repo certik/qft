@@ -93,6 +93,95 @@ e^{iw_{fn}t''}\braket{f^0|H^1(t'')|n^0}
 e^{i w_{ni} t'}\braket{n^0|H^1(t')|i^0}
 
 </e>
-And so on for higher orders of the perturbation theory.
+And so on for higher orders of the perturbation theory --- more terms will
+arise on the right hand side of the last formula, so this is our main formula
+for calculating the <m>d_n(t)</m> coefficients.
 </p>
+<section>
+    <title>Time Independent Perturbation Theory</title>
+<p>
+As a special case, if <m>H^1</m> doesn't depend on time, the formula for
+<m>d_n(t)</m> simplifies. Let's take
+<e>H(t) = H^0 + e^{t/\tau} H^1</e>
+so at the time <m>t_1=-\infty</m> the Hamiltonian <m>H(t)=H^0</m> is
+unperturbed and we are interested in the time <m>t=0</m>, when the Hamiltonian
+becomes <m>H(t) = H^0 + H^1</m> (the coefficients <m>d_n(t)</m> will still
+depend on the <m>\tau</m> variable) and we do the limit <m>\tau\to\infty</m>
+(this corresponds to smoothly applying the perturbation <m>H^1</m> at the time
+negative infinity).
+</p>
+<p>
+Let's calculate <m>d_f(0)</m>:
+<e>
+d_f(0)
+= \delta_{fi}+
+\left(-{i\over\hbar}\right)\int_{-\infty}^0
+e^{i w_{fi} t'}e^{t\over\tau}\d t'\braket{f^0|H^1|i^0}
++
+</e>
+<e>
++
+\left(-{i\over\hbar}\right)^2\sum_n
+\int_{-\infty}^0\d t''\int_{-\infty}^{t''}\d t'
+e^{iw_{fn}t''}
+e^{i w_{ni} t'}
+e^{t''\over\tau}
+e^{t'\over\tau}
+\braket{f^0|H^1|n^0}
+\braket{n^0|H^1|i^0}
+=
+</e>
+
+<e>
+= \delta_{fi}+
+\left(-{i\over\hbar}\right)
+{1\over{1\over\tau}+i\omega_{fi}}
+\braket{f^0|H^1|i^0}
++
+</e>
+<e>
++
+\left(-{i\over\hbar}\right)^2\sum_n
+{1\over{1\over\tau}+i\omega_{ni}}
+{1\over{2\over\tau}+i\omega_{fn}+i\omega_{ni}}
+\braket{f^0|H^1|n^0}
+\braket{n^0|H^1|i^0}
+</e>
+
+Taking the limit <m>\tau\to\infty</m>:
+<e>
+d_f(0)
+= \delta_{fi}+
+\left(-{1\over\hbar}\right)
+{1\over\omega_{fi}}
+\braket{f^0|H^1|i^0}
++
+</e>
+<e>
++
+\left(-{1\over\hbar}\right)^2\sum_n
+{1\over\omega_{ni}}
+{1\over\omega_{fn}+\omega_{ni}}
+\braket{f^0|H^1|n^0}
+\braket{n^0|H^1|i^0}
+=
+</e>
+
+<e>
+= \delta_{fi}-
+{\braket{f^0|H^1|i^0}\over E_f^0-E_i^0}
++
+</e>
+<e>
++
+\sum_n
+{
+\braket{f^0|H^1|n^0}
+\braket{n^0|H^1|i^0}
+\over
+(E_n^0-E_i^0)(E_f^0-E_i^0)
+}
+</e>
+</p>
+</section>
 </section>

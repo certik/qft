@@ -2,13 +2,19 @@
 <title>From QED to Quantum Mechanics</title>
 <p>
 The QED Lagrangian density is
-<e>\L=\bar\psi(ic\gamma^\mu D_\mu-mc^2)\psi-{1\over4}F_{\mu\nu}F^{\mu\nu}</e>
+<e>\L=\bar\psi(i\hbar c\gamma^\mu D_\mu-mc^2)\psi-{1\over4}F_{\mu\nu}F^{\mu\nu}</e>
 where
-<e>\psi=\left(\matrix{\psi_1\psi_2\psi_3\psi_4}\right) </e>
+<e>\psi=\left(
+\begin{array}{c}
+\psi_1 \\
+\psi_2 \\
+\psi_3 \\
+\psi_4 \\
+\end{array}\right) </e>
 and
-<e>D_\mu=\partial_\mu+ieA_\mu</e>
-is the gauge covariant derivative and (<m>e</m> is the elementary charge, which is
-<m>1</m> in atomic units)
+<e>D_\mu=\partial_\mu+{i\over \hbar}eA_\mu</e>
+is the gauge covariant derivative and (<m>e</m> is the elementary charge, which
+is <m>1</m> in atomic units, i.e. the electron has a charge <m>-e</m>)
 <e>F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu</e>
 is the electromagnetic field tensor. It's astonishing, that this simple
 Lagrangian can account for all phenomena from macroscopic scales down to
@@ -18,7 +24,7 @@ received the 1965 Nobel Prize in Physics for such a fantastic achievement.
 <p>
 Plugging this Lagrangian into the Euler-Lagrange equation of motion for a
 field, we get:
-<e>(ic\gamma^\mu D_\mu-mc^2)\psi=0</e>
+<e>(i\hbar c\gamma^\mu D_\mu-mc^2)\psi=0</e>
 <e>\partial_\nu F^{\nu\mu}=-ec\bar\psi\gamma^\mu\psi</e>
 The first equation is the Dirac equation in the electromagnetic field and
 the second equation is a set of Maxwell equations (<m>\partial_\nu
@@ -35,10 +41,12 @@ perturbation theory.
 The four potential <m>A^\mu</m> is given by:
 <e>A^\mu=(A^0, {\bf A}) = (A^0, A^1, A^2, A^3)</e>
 <e>A_\mu=g_{\mu\nu}A^\nu=(A^0, -{\bf A}) = (A^0, -A^1, -A^2, -A^3)</e>
-Note that <m>A_0=A^0</m>, but <m>A_i = -A^i</m>.
+Note that <m>A_0=A^0={\phi\over c}</m> (where <m>\phi</m> is the electrostatic
+potential), but <m>A_i = -A^i</m> (the components with upper
+indices are components of the vector <m>\bf A</m>).
 The first component <m>A^0</m> of the 4-potential is the electric potential and
 the potential <m>V</m> which is in the Schr&ouml;dinger equation is given (as
-we show in a moment) by <m>V=ecA_0</m>. For the minimal coupling
+we show in a moment) by <m>V=e\phi=ecA_0</m>. For the minimal coupling
 <m>D_\mu = \partial_\mu + ie A_\mu</m> we get:
 <e>D_0 = \partial_0 + ie A_0 = \partial_0 + ie A^0</e>
 <e>D_j = \partial_j + ie A_j = \partial_j - ie A^j</e>
@@ -51,20 +59,20 @@ We multiply the Dirac equation by <m>\gamma^0</m> from left to get:
 -ce\gamma^0\gamma^iA_i)\psi
 </e>
 and we make the following substitutions (it's just a formalism, nothing more):
-<m>\beta=\gamma^0</m>, <m>\alpha^i=\gamma^0\gamma^i</m>, <m>p_j=-i\partial_j</m>,
+<m>\beta=\gamma^0</m>, <m>\alpha^i=\gamma^0\gamma^i</m>, <m>p_j=i\partial_j</m>,
 <m>\partial_0={1\over c}{\partial\over\partial t}</m>
 to get
-<e>(i{\partial\over\partial t}-c\alpha^i p_i-\beta
+<e>(i{\partial\over\partial t}+c\alpha^i p_i-\beta
 mc^2-ceA_0-ce\alpha^iA_i)\psi=0\,.</e>
 or:
-<e>i{\partial\psi\over\partial t}=(c\alpha^i(p_i+eA_i)
+<e>i{\partial\psi\over\partial t}=(c\alpha^i(-p_i+eA_i)
 +\beta mc^2+ceA_0)\psi\,.</e>
 This can be written as:
 <e> i{\partial\psi\over\partial t}=H\psi\,,</e>
 where the Hamiltonian is given by (identifying <m>V=ceA_0</m>):
-<e> H=c\alpha^i(p_i+eA_i)+\beta mc^2+V\,,</e>
-or (note that <m>A_i=-A^i</m>):
-<e> H=c{\boldsymbol\alpha}\cdot({\bf p}-e{\bf A})+\beta mc^2+V\,,</e>
+<e> H=c\alpha^i(-p_i+eA_i)+\beta mc^2+V\,,</e>
+or (note that <m>A_i=-A^i</m> and <m>p_i=-p^i</m>):
+<e> H=c{\boldsymbol\alpha}\cdot({\bf p}-e{\bf A})+\beta mc^2+V\,.</e>
 </p>
 <p>
 The right hand side of the Maxwell equations is the 4-current, so it's given

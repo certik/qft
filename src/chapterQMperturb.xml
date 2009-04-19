@@ -38,41 +38,38 @@ e^{i w_{fn} t}\braket{f^0|H^1|n^0}
 </e>
 where <m>w_{fn}={E^0_f - E^0_n\over \hbar}</m>. Using
 <m>\braket{f^0|n^0}=\delta_{fn}</m>:
-<e id="perturb0">
+<e>
 i\hbar{\d\over\d t}d_f(t)
 =\sum_n
 d_n(t)
 e^{i w_{fn} t}\braket{f^0|H^1|n^0}
 </e>
-
+we integrate from <m>t_1</m> to <m>t</m>:
+<e>
+i\hbar\left((d_f(t)-d_f(t_1)\right)
+=\sum_n\int_{t_1}^t
+d_n(t')
+e^{i w_{fn} t'}\braket{f^0|H^1(t')|n^0} \d t'
+</e>
 Let the initial wavefunction at time <m>t_1</m> be some particular state
 <m>\ket{\psi(t_1)}=\ket{i^0}</m> of the unperturbed Hamiltonian, then
-<m>d_n(t_1)=\delta_{ni}</m>.
+<m>d_n(t_1)=\delta_{ni}</m> and we get:
+<e id="perturb0">
+d_f(t)
+=\delta_{fi}-{i\over\hbar}\sum_n\int_{t_1}^t
+d_n(t')
+e^{i w_{fn} t'}\braket{f^0|H^1(t')|n^0} \d t'
+</e>
+This is the equation that we will use for the perturbation theory.
 </p>
 <p>
 In the zeroth order of the perturbation theory, we set <m>H^1(t)=0</m> and
-we get <m>{\d\over\d t}d_f(t)=0</m>, so <m>d_n(t)=d_n(t_1)</m> (i.e. the
-coefficients <m>d_n</m> change with time only if <m>H^1</m> is nonzero). In our
-case we have <m>d_n(t_1)=\delta_{ni}</m>, so (for all <m>f</m>):
+we get:
 <e>d_f(t)=\delta_{fi}</e></p>
 <p>
 In the first order of the perturbation theory, we take the solution
 <m>d_n(t)=\delta_{ni}</m> obtained in the zeroth order and substitute into the
-right hand side of <a
-    ref="perturb0"/>:
-<e>
-i\hbar{\d\over\d t}d_f(t)
-=\sum_n
-\delta_{ni}
-e^{i w_{fn} t}\braket{f^0|H^1|n^0}
-= e^{i w_{fi} t}\braket{f^0|H^1|i^0}
-</e>
-Integrating from <m>t_1</m> to <m>t</m>:
-<e>
-i\hbar(d_f(t)-d_f(t_1))
-= \int_{t_1}^{t} e^{i w_{fi} t'}\braket{f^0|H^1(t')|i^0}\d t'
-</e>
-using <m>d_f(t_1)=\delta_{fi}</m>:
+right hand side of <a ref="perturb0"/>:
 <e>
 d_f(t)
 = \delta_{fi}
@@ -80,8 +77,8 @@ d_f(t)
 </e>
 </p>
 <p>
-In the second order, we take the last solution, substitute into <a
-    ref="perturb0"/> and integrate from <m>t_1</m> to <m>t_2</m>:
+In the second order, we take the last solution, substitute into the right hand
+side of <a ref="perturb0"/> again:
 <e>
 d_f(t)
 = \delta_{fi}+
@@ -91,9 +88,9 @@ d_f(t)
 <e>
 +
 \left(-{i\over\hbar}\right)^2\sum_n
-\int_{t_1}^t\d t''\int_{t_1}^{t''}\d t' e^{i
-w_{ni} t'}\braket{n^0|H^1(t')|i^0}
+\int_{t_1}^t\d t''\int_{t_1}^{t''}\d t'
 e^{iw_{fn}t''}\braket{f^0|H^1(t'')|n^0}
+e^{i w_{ni} t'}\braket{n^0|H^1(t')|i^0}
 
 </e>
 And so on for higher orders of the perturbation theory.

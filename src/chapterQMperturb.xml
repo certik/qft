@@ -203,6 +203,41 @@ Substituting this into <a ref="psi"/> evaluated for <m>t=0</m>:
 }
 </e>
 The sum <m>\sum_n</m> is over all <m>n\neq i</m>, similarly for the other sum.
+Let's also calculate the energy:
+<e>
+E
+=\braket{\psi(0)|H|\psi(0)}
+=\braket{\psi(0)|H^0+H^1|\psi(0)}
+=
+</e>
+<e>
+\left(\cdots-
+\sum_{n'\neq i}
+{\braket{i^0|H^1|n'^0}\bra{n'^0}\over E_{n'}^0-E_i^0}
++\bra{i^0}\right)
+(H^0+H^1)
+\left(\ket{i^0}-
+\sum_{n\neq i}
+{\ket{n^0}\braket{n^0|H^1|i^0}\over E_n^0-E_i^0}
++\cdots\right)
+</e>
+To evaluate this, we use the fact that <m>\braket{i^0|H^0|i^0}=E_i^0</m> and
+<m>\braket{i^0|H^0|n^0}=E_i^0\delta_{ni}</m>:
+<e>
+E = E_i^0 + \braket{i^0|H^1|i^0} - \sum_{n\neq i}
+{\braket{i^0|H^1|n^0}\braket{n^0|H^1|i^0}\over E_n^0-E_i^0}+\cdots
+=
+</e>
+<e>
+= E_i^0 + \braket{i^0|H^1|i^0} - \sum_{n\neq i}
+{|\braket{n^0|H^1|i^0}|^2\over E_n^0-E_i^0}+\cdots
+</e>
+Where we have neglected the higher order terms, so we can identify the
+corrections to the energy <m>E</m> coming from the particular orders of the
+perturbation theory:
+<e>E_i^0 = \braket{i^0|H^0|i^0}</e>
+<e>E_i^1 = \braket{i^0|H^1|i^0}</e>
+<e>E_i^2 = - \sum_{n\neq i} {|\braket{n^0|H^1|i^0}|^2\over E_n^0-E_i^0}</e>
 </p>
 </section>
 </section>

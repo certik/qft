@@ -1,8 +1,8 @@
 Compilation
 ===========
 
-wajig install texlive texlive-lang-czechslovak texlive-formats-extra texlive-generic-recommended texlive-fonts-extra
+wajig install texlive texlive-lang-czechslovak texlive-formats-extra texlive-generic-recommended texlive-fonts-extra python-lxml
 
 $ make
 
-this will create a "master.pdf" in this directory.
+this will create a "qft.pdf" in this directory.

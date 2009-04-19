@@ -79,4 +79,23 @@ d_f(t)
 -{i\over\hbar}\int_{t_1}^{t} e^{i w_{fi} t'}\braket{f^0|H^1(t')|i^0}\d t'
 </e>
 </p>
+<p>
+In the second order, we take the last solution, substitute into <a
+    ref="perturb0"/> and integrate from <m>t_1</m> to <m>t_2</m>:
+<e>
+d_f(t)
+= \delta_{fi}+
+\left(-{i\over\hbar}\right)\int_{t_1}^{t} e^{i w_{fi} t'}\braket{f^0|H^1(t')|i^0}\d t'
++
+</e>
+<e>
++
+\left(-{i\over\hbar}\right)^2\sum_n
+\int_{t_1}^t\d t''\int_{t_1}^{t''}\d t' e^{i
+w_{ni} t'}\braket{n^0|H^1(t')|i^0}
+e^{iw_{fn}t''}\braket{f^0|H^1(t'')|n^0}
+
+</e>
+And so on for higher orders of the perturbation theory.
+</p>
 </section>

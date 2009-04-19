@@ -110,11 +110,12 @@ After integration by parts we arrive at
     <title>Klein-Gordon Equation</title>
 <p>
 The Dirac equation implies the Klein-Gordon equation:
-<e>(-ic\gamma^\mu D_\mu-mc^2)(ic\gamma^\nu D_\nu-mc^2)\psi=
-(c^2\gamma^\mu\gamma^\nu D_\mu D_\mu+m^2c^4)\psi=
+<e>0=(-i\hbar c\gamma^\mu D_\mu-mc^2)(i\hbar c\gamma^\nu D_\nu-mc^2)\psi=
+(\hbar^2c^2\gamma^\mu\gamma^\nu D_\mu D_\nu+m^2c^4)\psi=
 </e>
 <e>
-=(c^2D^\mu D_\mu-ic^2[\gamma^\mu,\gamma^\nu]D_\mu D_\nu+m^2c^4)\psi=0</e>
+=(\hbar^2c^2g^{\mu\nu}D_\mu D_\nu+m^2c^4)\psi
+=(\hbar^2c^2D^\mu D_\mu+m^2c^4)\psi</e>
 Note however, the <m>\psi</m> in the true Klein-Gordon equation is just a scalar,
 but here we get a 4-component spinor. Now:
 <e>

@@ -17,6 +17,24 @@
             \input macros.tex
         </mathinclude>
     </articleinfo>
+    <section>
+        <title>Introduction</title>
+        <p>
+            In these notes we show how to use the Standard Model of particle
+            physics to derive equations in quantum mechanics (and quantum field
+            theory).
+        </p>
+        <p>
+            We start by deriving the electroweak Standard Model from the
+            <m>SU(2)\times U(1)</m> symmetry and couple other (standard)
+            assumptions, then we show how to used this to derive the Dirac and 
+            Schr&ouml;dinger equations (as a low energy limit). We then show some
+            particular ways to solve those equations, like perturbation theory.
+        </p>
+    </section>
     &chapterQFT;
-    &chapterQED;
+    <section>
+        <title>Quantum Mechanics</title>
+        &chapterQED;
+    </section>
 </article>

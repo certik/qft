@@ -5,6 +5,7 @@
   <!ENTITY chapterQFT SYSTEM "chapterQFT.xml">
   <!ENTITY chapterQED SYSTEM "chapterQED.xml">
   <!ENTITY chapterQMperturb SYSTEM "chapterQMperturb.xml">
+  <!ENTITY chapterAppendix SYSTEM "chapterAppendix.xml">
   <!ENTITY ssharp "&#223;">
   <!ENTITY ouml "&#246;">
   <!ENTITY uuml "&#252;">
@@ -39,4 +40,5 @@
         &chapterQED;
         &chapterQMperturb;
     </section>
+    &chapterAppendix;
 </article>

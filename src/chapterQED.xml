@@ -32,17 +32,22 @@ can be shown that this corresponds to taking the tree diagrams in the
 perturbation theory.
 </p>
 <p>
-The first component <m>A_0</m> of the 4-potential is the electric potential, and
-because this is the potential that (as we show in a moment) is in the
-Schr&ouml;dinger equation, we denote it by <m>V</m>:
-<e>A_\mu=\left({V\over ec},A_1,A_2,A_3\right)</e>
-So in the non-relativistic limit, the <m>V\over e</m> corresponds to the electric
-potential.  We multiply the Dirac equation by <m>\gamma^0</m> from left to get:
+The four potential <m>A^\mu</m> is given by:
+<e>A^\mu=(A^0, {\bf A}) = (A^0, A^1, A^2, A^3)</e>
+<e>A_\mu=g_{\mu\nu}A^\nu=(A^0, -{\bf A}) = (A^0, -A^1, -A^2, -A^3)</e>
+Note that <m>A_0=A^0</m>, but <m>A_i = -A^i</m>.
+The first component <m>A^0</m> of the 4-potential is the electric potential and
+the potential <m>V</m> which is in the Schr&ouml;dinger equation is given (as
+we show in a moment) by <m>V=ecA_0</m>. For the minimal coupling
+<m>D_\mu = \partial_\mu + ie A_\mu</m> we get:
+<e>D_0 = \partial_0 + ie A_0 = \partial_0 + ie A^0</e>
+<e>D_j = \partial_j + ie A_j = \partial_j - ie A^j</e>
+We multiply the Dirac equation by <m>\gamma^0</m> from left to get:
 <e>0=\gamma^0(ic\gamma^\mu D_\mu-mc^2)\psi=
-\gamma^0(ic\gamma^0(\partial_0+i{V\over c})+ic\gamma^i
+\gamma^0(ic\gamma^0(\partial_0+ieA_0)+ic\gamma^i
 (\partial_i+ieA_i)-mc^2)\psi=</e>
 <e>=
-(ic\partial_0+ic\gamma^0\gamma^i\partial_i-\gamma^0mc^2-V
+(ic\partial_0+ic\gamma^0\gamma^i\partial_i-\gamma^0mc^2-ceA_0
 -ce\gamma^0\gamma^iA_i)\psi
 </e>
 and we make the following substitutions (it's just a formalism, nothing more):
@@ -50,11 +55,16 @@ and we make the following substitutions (it's just a formalism, nothing more):
 <m>\partial_0={1\over c}{\partial\over\partial t}</m>
 to get
 <e>(i{\partial\over\partial t}-c\alpha^i p_i-\beta
-mc^2-V-ce\alpha^iA_i)\psi=0\,.</e>
-This, in most solid state physics texts, is usually written as
+mc^2-ceA_0-ce\alpha^iA_i)\psi=0\,.</e>
+or:
+<e>i{\partial\psi\over\partial t}=(c\alpha^i(p_i+eA_i)
++\beta mc^2+ceA_0)\psi\,.</e>
+This can be written as:
 <e> i{\partial\psi\over\partial t}=H\psi\,,</e>
-where the Hamiltonian is given by
-<e> H=c\alpha^i(p_i+eA_i)+\beta mc^2+V\,.</e>
+where the Hamiltonian is given by (identifying <m>V=ceA_0</m>):
+<e> H=c\alpha^i(p_i+eA_i)+\beta mc^2+V\,,</e>
+or (note that <m>A_i=-A^i</m>):
+<e> H=c{\boldsymbol\alpha}\cdot({\bf p}-e{\bf A})+\beta mc^2+V\,,</e>
 </p>
 <p>
 The right hand side of the Maxwell equations is the 4-current, so it's given

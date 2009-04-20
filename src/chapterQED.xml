@@ -141,37 +141,37 @@ ie((\partial^0 A_0)+2A^0\partial_0+(\partial^i A_i)+2A^i\partial_i)
 </section>
 <p>
 The nonrelativistic limit can also be applied directly to the Klein-Gordon equation:
-<e>0=(c^2D^\mu D_\mu+m^2c^4)\psi=</e>
+<e>0=(\hbar^2c^2D^\mu D_\mu+m^2c^4)\psi=</e>
 <e>=\left(
-c^2\partial^\mu\partial_\mu
+\hbar^2c^2\partial^\mu\partial_\mu
 +i{\partial V\over\partial t}
 +2iV{\partial\over\partial t}
-+iec^2(\partial^i A_i)
-+2iec^2A^i\partial_i
++i\hbar ec^2(\partial^i A_i)
++2i\hbar ec^2A^i\partial_i
 -V^2
 -e^2c^2A^iA_i
 +m^2c^4
-\right)e^{-imc^2t}\varphi=
+\right)e^{-{i\over\hbar}mc^2t}\varphi=
 </e>
 <e>=\left(
-{\partial^2\over\partial t^2}
--c^2\nabla^2
+\hbar^2{\partial^2\over\partial t^2}
+-c^2\hbar^2\nabla^2
 +2iV{\partial\over\partial t}
 +i{\partial V\over\partial t}
-+iec^2(\partial^i A_i)
-+2iec^2A^i\partial_i
++i\hbar ec^2(\partial^i A_i)
++2i\hbar ec^2A^i\partial_i
 -V^2
 -e^2c^2A^iA_i
 +m^2c^4
-\right)e^{-imc^2t}\varphi=
+\right)e^{-{i\over\hbar}mc^2t}\varphi=
 </e>
-<e>=e^{-imc^2t}\left(
-(-imc^2+{\partial\over\partial t})^2
--c^2\nabla^2
-+2iV(-imc^2+{\partial\over\partial t})
+<e>=e^{-{i\over\hbar}mc^2t}\left(
+\hbar^2(-{i\over\hbar}mc^2+{\partial\over\partial t})^2
+-\hbar^2c^2\nabla^2
++2iV(-{i\over\hbar}mc^2+{\partial\over\partial t})
 +i{\partial V\over\partial t}
-+iec^2(\partial^i A_i)
-+2iec^2A^i\partial_i
++i\hbar ec^2(\partial^i A_i)
++2i\hbar ec^2A^i\partial_i
 -V^2+ \right.
 </e>
 <e>\left.
@@ -179,14 +179,14 @@ c^2\partial^\mu\partial_\mu
 +m^2c^4
 \right)\varphi=
 </e>
-<e>=e^{-imc^2t}\left(
--2imc^2{\partial\over\partial t}+{\partial^2\over\partial t^2}
--c^2\nabla^2
-+2Vmc^2
+<e>=e^{-{i\over\hbar}mc^2t}\left(
+-2i\hbar mc^2{\partial\over\partial t}+\hbar^2{\partial^2\over\partial t^2}
+-c^2\hbar^2\nabla^2
++2Vm{c^2\over\hbar}
 +2iV{\partial\over\partial t}
 +i{\partial V\over\partial t}
-+iec^2(\partial^i A_i)
-+2iec^2A^i\partial_i
++i\hbar ec^2(\partial^i A_i)
++2i\hbar ec^2A^i\partial_i
 -V^2+ \right.
 </e>
 <e>\left.
@@ -194,31 +194,31 @@ c^2\partial^\mu\partial_\mu
 \right)\varphi=
 </e>
 <e>=
--2mc^2 e^{-imc^2 t} \left(i{\partial\over\partial t}+{\nabla^2\over2m}-V
+-2mc^2 e^{-{i\over\hbar}mc^2 t} \left(i\hbar{\partial\over\partial t}+\hbar^2{\nabla^2\over2m}-V
 -{1\over2mc^2}{\partial^2\over\partial t^2}-{i\over2mc^2}{\partial
 V\over\partial t}+{V^2\over2mc^2}-{iV\over mc^2}{\partial\over\partial
 t}+\right.</e>
-<e>\left.-{ie\over2m}\partial^i A_i-{ie\over
+<e>\left.-{i\hbar e\over2m}\partial^i A_i-{i\hbar e\over
 m}A^i\partial_i+{e^2\over2m}A^iA_i\right)\varphi
 </e>
 Taking the limit <m>c\to\infty</m> we again recover the Schr&ouml;dinger equation:
-<e>i{\partial\over\partial t}\varphi=\left(-{\nabla^2\over2
+<e>i\hbar{\partial\over\partial t}\varphi=\left(-\hbar^2{\nabla^2\over2
 m}+V
-+{ie\over2m}\partial^i A_i
-+{ie\over m}A^i\partial_i
++{i\hbar e\over2m}\partial^i A_i
++{i\hbar e\over m}A^i\partial_i
 -{e^2\over2m}A^iA_i
 \right)\varphi\,,</e>
 we rewrite the right hand side a little bit:
-<e>i{\partial\over\partial t}\varphi=\left({1\over2 m}
+<e>i\hbar{\partial\over\partial t}\varphi=\left({\hbar^2\over2 m}
 (\partial^i\partial_i
-+ie\partial^i A_i
-+2ieA^i\partial_i
--e^2A^iA_i
++{i\over\hbar}e\partial^i A_i
++2{i\over\hbar}eA^i\partial_i
+-{e^2\over\hbar^2}A^iA_i
 )
 +V
 \right)\varphi\,,</e>
-<e>i{\partial\over\partial t}\varphi=\left({1\over2 m}
-(\partial^i+ieA^i)(\partial_i+ieA_i)
+<e>i\hbar{\partial\over\partial t}\varphi=\left({\hbar^2\over2 m}
+(\partial^i+{i\over\hbar}eA^i)(\partial_i+{i\over\hbar}eA_i)
 +V
 \right)\varphi\,,</e>
 <e>i\hbar{\partial\over\partial t}\varphi=\left({1\over2 m}

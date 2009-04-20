@@ -234,4 +234,71 @@ potential:
 <e>i\hbar{\partial\over\partial t}\varphi=\left({({\bf p}-e{\bf A})^2\over2 m}
 +V \right)\varphi\,.</e>
 </p>
+<p>
+A little easier derivation:
+<e> 0=(\hbar^2c^2 D^\mu D_\nu+m^2c^4)\psi= </e>
+<e> =(\hbar^2c^2 D^0 D_0+\hbar^2c^2D^i D_i+m^2c^4)\psi= </e>
+<e> =2mc^2\left({\hbar^2\over2m} D^0 D_0+{\hbar^2\over2m}D^i D_i+\half
+    mc^2\right)\psi= </e>
+<e> =2mc^2\left({\hbar^2\over2m}
+\left(\partial^0+{i\over\hbar}eA^0\right)
+\left(\partial_0+{i\over\hbar}eA_0\right)+\half mc^2+{\hbar^2\over2m}D^i D_i
+\right)
+e^{-{i\over\hbar}mc^2 t}
+\varphi= </e>
+
+<e> =2mc^2\left({\hbar^2\over2m}
+\left(\partial^0+{i\over\hbar}eA^0\right)
+e^{-{i\over\hbar}mc^2 t}
+\left(\partial_0-{i\over\hbar}mc+{i\over\hbar}eA_0\right)+\half mc^2+{\hbar^2\over2m}D^i D_i
+\right)
+\varphi= </e>
+
+<e> =2mc^2 e^{-{i\over\hbar}mc^2 t} \left({\hbar^2\over2m}
+\left(\partial^0-{i\over\hbar}mc+{i\over\hbar}eA^0\right)
+\left(\partial_0-{i\over\hbar}mc+{i\over\hbar}eA_0\right)+\half mc^2+{\hbar^2\over2m}D^i D_i
+\right)
+\varphi= </e>
+
+<e> =2mc^2 e^{-{i\over\hbar}mc^2 t} \left(
+{\hbar^2\over2m}\partial^0\partial_0
+-\half mc^2
+-{e^2A^0A_0\over 2m}
++ceA^0
++{\hbar^2\over m}{i\over\hbar}e(\partial^0 A^0+A^0\partial^0)
+-i\hbar c\partial_0
++\half mc^2+{\hbar^2\over2m}D^i D_i
+\right)
+\varphi= </e>
+
+<e> =2mc^2 e^{-{i\over\hbar}mc^2 t} \left(
+-i\hbar {\partial\over\partial t}
++{\hbar^2\over2m}D^i D_i
++ceA^0
++{\hbar^2\over2mc^2}{\partial^2\over\partial t^2}
+-{e^2\phi^2\over 2mc^2}
++{ie\hbar\over mc^2}({\partial\over\partial t} \phi
++ \phi{\partial\over\partial t})
+\right)
+\varphi= </e>
+
+<e> =2mc^2 e^{-{i\over\hbar}mc^2 t} \left(
+-i\hbar {\partial\over\partial t}
++{({\bf p}-e{\bf A})^2\over2m}
++e\phi
++{\hbar^2\over2mc^2}{\partial^2\over\partial t^2}
+-{e^2\phi^2\over 2mc^2}
++{ie\hbar\over mc^2}({\partial\over\partial t} \phi
++ \phi{\partial\over\partial t})
+\right)
+\varphi</e>
+and letting <m>c\to\infty</m> we get the Schr&ouml;dinger equation:
+<e>
+i\hbar {\partial\over\partial t}\varphi=
+\left(
+{({\bf p}-e{\bf A})^2\over2m}
++e\phi
+\right)\varphi
+</e>
+</p>
 </section>

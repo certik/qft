@@ -136,6 +136,7 @@ class LaTeXConverter(Converter):
                 "_": r"\_",
                 "$": r"\$",
                 "#": r"\#",
+                "%": r"\%",
                 "^": r"\^",
                 }
         for old, new in replacements.iteritems():

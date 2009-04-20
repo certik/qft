@@ -13,7 +13,7 @@
 
 <article>
     <articleinfo>
-        <title>Quantum Field Theory</title>
+        <title>Quantum Field Theory and Quantum Mechanics</title>
         <mathinclude>
             \usepackage{braket}
             \input macros.tex
@@ -22,16 +22,53 @@
     <section>
         <title>Introduction</title>
         <p>
-            In these notes we show how to use the Standard Model of particle
-            physics to derive equations in quantum mechanics (and quantum field
-            theory).
+            The aim of these (work in progress) notes is to use the Standard
+            Model of particle physics to derive all equations in quantum
+            mechanics (and quantum field theory) that we need for our research.
         </p>
         <p>
             We start by deriving the electroweak Standard Model from the
             <m>SU(2)\times U(1)</m> symmetry and couple other (standard)
-            assumptions, then we show how to used this to derive the Dirac and 
-            Schr&ouml;dinger equations (as a low energy limit). We then show some
-            particular ways to solve those equations, like perturbation theory.
+            assumptions in the quantum field theory. After that, we only want
+            to derive things and make nonrelativistic limits or other
+            approximations in order to derive everything else in quantum
+            mechanics. In particular we show how to derive the
+            Dirac and Schr&ouml;dinger equations (as a low energy limit). We
+            then show some particular ways to solve those equations, like
+            perturbation theory, scattering theory, ...
+        </p>
+        <p>
+            The goal is to have a complete theory on about 30 or 40 pages and
+            then lots of examples (arbitrarily long), that use the theory (but
+            do not develop new ideas), so that one can learn how the theory
+            works from the examples.
+            For instance, one can ask "why is there the term <m>({\bf p}-e{\bf A})^2</m> in the Schr&ouml;dinger equation for electromagnetic
+            field, why this and not something else?" or "why
+            is there the <m>\boldsymbol\sigma\cdot{\bf B}</m> term in the Pauli
+            equation?", to find the answer, one just finds the Pauli equation
+            in the theory and then looks at the derivation, so in this case one
+            quickly finds that it follows from the minimal coupling in QED,
+            e.g. it's the easiest way how electron-foton interaction can be
+            coupled, e.g. the <m>U(1)</m> symmetry. Nice thing about QFT is
+            that one can find really nice geometrical reasons why things
+            are that way and not some other way (just open any advance book on
+            QFT), but the problem is that basically nowhere is some easy (but
+            correct) translation of those results to regular QM, so that
+            everything fits into just couple dozens pages, so that it can serve
+            as a reference.
+        </p>
+        <p>
+            The advantage of this top-down approach is that it is easy to see
+            where things come from and also to understand exactly what
+            approximations one is using when dealing with any equation in QM.
+            However, as is well-known in physics, to be a good physicist one
+            has to understand all the approaches, e.g. both top-down and
+            bottom-up and all other approaches to QM and QFT, because there are
+            no two approaches that would be 100% equivalent, so one has to use
+            the right approach for the particular problem. So these notes do
+            not aspire to be the right way to teach QM, but rather to serve as
+            a reference to get quickly oriented and to find the equations to
+            start from.
         </p>
     </section>
     &chapterQFT;

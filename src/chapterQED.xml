@@ -99,7 +99,8 @@ term) and we get
 \varphi{\partial\varphi^*\over\partial t})-
 {1\over2m}\partial^i\varphi^*\partial_i\varphi
 </e>
-After integration by parts we arrive at
+After integration by parts we arrive at the Lagrangian for the Schr&ouml;dinger
+equation:
 <e>L=i\varphi^*{\partial\varphi\over\partial t}
 -{1\over 2m}\partial^i\varphi^*\partial_i
 \varphi</e>

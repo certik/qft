@@ -221,13 +221,17 @@ we rewrite the right hand side a little bit:
 (\partial^i+ieA^i)(\partial_i+ieA_i)
 +V
 \right)\varphi\,,</e>
-And we get the usual form of the Schr&ouml;dinger equation for the vector
-potential <m>{\bf A}=(A_1, A_2, A_3)</m>:
-<e>i{\partial\over\partial t}\varphi=\left(-{(\nabla+ie{\bf A})^2\over2 m}
-+V \right)\varphi\,.</e>
-We can rewrite <m>-(\nabla+ie{\bf A})^2= (-i\nabla+e{\bf A})^2</m> and by using
-<m>{\bf p}=-i\nabla</m> we get:
-<e>i{\partial\over\partial t}\varphi=\left({({\bf p}+e{\bf A})^2\over2 m}
+<e>i\hbar{\partial\over\partial t}\varphi=\left({1\over2 m}
+\hbar^2D^iD_i +V \right)\varphi\,,</e>
+Using (see the appendix for details):
+<e>
+\hbar^2D^iD_i=-\hbar^2\delta_{ij}D^iD^j
+=-\hbar^2\left({i\over\hbar}({\bf p}-e{\bf A})\right)^2
+=({\bf p}-e{\bf A})^2
+</e>
+we get the usual form of the Schr&ouml;dinger equation for the vector
+potential:
+<e>i\hbar{\partial\over\partial t}\varphi=\left({({\bf p}-e{\bf A})^2\over2 m}
 +V \right)\varphi\,.</e>
 </p>
 </section>

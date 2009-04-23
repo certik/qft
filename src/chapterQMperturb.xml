@@ -306,5 +306,25 @@ and simplify the result even further:
 <e>G_-({\bf r}, {\bf r'})
     ={4\pi^2 m\over\hbar^2}{e^{-ikr}\over r}  e^{i k{\bf r'}\cdot{\bf\hat r}}
 </e>
+Note: both functions may be divided by the factor <m>(2\pi)^3</m> due to the
+momentum integration.
+</p>
+<p>
+Let's get back to the solution to the Schr&ouml;dinger equation:
+<e>\ket{\psi}=\ket{\bf{k}}+G_+V\ket{\psi}</e>
+It contains the solution <m>\ket{\psi}</m> on both sides of the equation, so we
+express it explicitly:
+<e>\ket{\psi}-G_+V\ket{\psi}=\ket{\bf{k}}</e>
+<e>\ket{\psi}={1\over 1-G_+V}\ket{\bf{k}}</e>
+and multiply by <m>V</m>:
+<e>V\ket{\psi}={V\over 1-G_+V}\ket{\bf{k}}=T\ket{\bf{k}}</e>
+where <m>T</m> is the transition matrix:
+<e>T={V\over 1-G_+V}=V(1+G_+V + (G_+V)^2 + \cdots)=</e>
+<e>=V+VG_+V + VG_+VG_+V + \cdots=</e>
+<e>=V+V{1\over E_k-H_0+i\epsilon}V + V{1\over E_k-H_0+i\epsilon}V{1\over E_k-H_0+i\epsilon}V + \cdots</e>
+Then the final solution is:
+<e>\ket{\psi}=\ket{\bf{k}}+G_+V\ket{\psi}=\ket{\bf{k}}+G_+T\ket{{\bf k}}</e>
+<e>\psi({\bf r})=\braket{{\bf r}|\psi}
+=\braket{{\bf r}|\bf{k}}+\braket{{\bf r}|G_+T|{\bf k}}</e>
 </p>
 </section>

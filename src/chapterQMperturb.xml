@@ -364,10 +364,36 @@ e^{i{\bf k'}\cdot{\bf r'}}
 where the scattering amplitude <m>f(\theta,\phi)</m> is:
 <e>
 f(\theta,\phi)= {4\pi^2 m\over\hbar^2} \braket{k{\bf\hat r}|T|{\bf k}}
+= {4\pi^2 m\over\hbar^2} \braket{{\bf k'}|T|{\bf k}}
 </e>
+Where <m>{\bf k'}=k{\bf\hat r}</m> is the final momentum.
 The differential cross section <m>{\d\sigma\over\d\Omega}</m> is then:
 <e>
 {\d\sigma\over\d\Omega}= |f(\theta,\phi)|^2
+</e>
+Let's write the explicit formula for the transition matrix:
+<e>
+\braket{{\bf k'}|T|{\bf k}}
+=\int\d^3r\braket{{\bf k'}|{\bf r}}\braket{{\bf r}|V|{\bf k}}
++\int\d^3r\d^3r'\braket{{\bf k'}|{\bf r}}\braket{{\bf r}|VG_+|{\bf r'}}
+\braket{{\bf r'}|V|{\bf k}}+\cdots=
+</e>
+<e>
+=\int\d^3r e^{i({\bf k}-{\bf k'})\cdot{\bf r}}V({\bf r})
++\int\d^3r\d^3r'e^{-i{\bf k'}\cdot{\bf r}}
+V({\bf r})
+{e^{i k|{\bf r}-{\bf r'}|}\over|{\bf r}-{\bf r'}|}
+V({\bf r'})e^{i{\bf k}\cdot{\bf r'}}+\cdots=
+</e>
+The Born approximation is just the first term:
+<e>
+\braket{{\bf k'}|T|{\bf k}}
+\approx\int\d^3r e^{i({\bf k}-{\bf k'})\cdot{\bf r}}V({\bf r})
+=\int \d r\, \d\theta\,\d\phi\, e^{iqr\cos\theta}V(r) r^2\sin\theta
+=
+</e>
+<e>
+=4\pi\int_0^\infty rV(r)\sin(qr)\,\d r
 </e>
 </p>
 </section>

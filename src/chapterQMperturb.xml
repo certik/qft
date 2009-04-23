@@ -324,7 +324,50 @@ where <m>T</m> is the transition matrix:
 <e>=V+V{1\over E_k-H_0+i\epsilon}V + V{1\over E_k-H_0+i\epsilon}V{1\over E_k-H_0+i\epsilon}V + \cdots</e>
 Then the final solution is:
 <e>\ket{\psi}=\ket{\bf{k}}+G_+V\ket{\psi}=\ket{\bf{k}}+G_+T\ket{{\bf k}}</e>
+and in a coordinate representation:
 <e>\psi({\bf r})=\braket{{\bf r}|\psi}
-=\braket{{\bf r}|\bf{k}}+\braket{{\bf r}|G_+T|{\bf k}}</e>
+=\braket{{\bf r}|\bf{k}}+\braket{{\bf r}|G_+T|{\bf k}}
+=\braket{{\bf r}|\bf{k}}+\int\d^3 r'\braket{{\bf r}|G_+|{\bf r'}}
+\braket{{\bf r'}|T|{\bf k}}=</e>
+<e>
+=\braket{{\bf r}|\bf{k}}+\int\d^3 r'\d^3k'\braket{{\bf r}|G_+|{\bf r'}}
+\braket{{\bf r'}|{\bf k'}}\braket{{\bf k'}|T|{\bf k}}=</e>
+<e>
+=e^{i{\bf k}\cdot{\bf r}} +\int\d^3 r'\d^3k' G_+({\bf r}, {\bf r'})
+e^{i{\bf k'}\cdot{\bf r'}}
+\braket{{\bf k'}|T|{\bf k}}</e>
+Plugging the representation of the Green function for
+<m>|{\bf r'}|\ll|{\bf r}|</m> in:
+<e>\psi({\bf r})
+=e^{i{\bf k}\cdot{\bf r}} +
+{4\pi^2 m\over\hbar^2}{e^{ikr}\over r}
+\int\d^3 r'\d^3k' e^{-i k{\bf r'}\cdot{\bf\hat r}}
+e^{i{\bf k'}\cdot{\bf r'}}
+\braket{{\bf k'}|T|{\bf k}}=</e>
+<e>
+=e^{i{\bf k}\cdot{\bf r}} +
+{4\pi^2 m\over\hbar^2}{e^{ikr}\over r}
+\int\d^3 r'\d^3k' e^{i {\bf r'}\cdot({\bf k'}-k{\bf\hat r})}
+\braket{{\bf k'}|T|{\bf k}}=</e>
+<e>
+=e^{i{\bf k}\cdot{\bf r}} +
+{4\pi^2 m\over\hbar^2}{e^{ikr}\over r}
+\int\d^3k' \delta({\bf k'}-k{\bf\hat r})
+\braket{{\bf k'}|T|{\bf k}}=</e>
+<e>
+=e^{i{\bf k}\cdot{\bf r}} +
+{4\pi^2 m\over\hbar^2}{e^{ikr}\over r}
+\braket{k{\bf\hat r}|T|{\bf k}}=</e>
+<e>
+=e^{i{\bf k}\cdot{\bf r}} + f(\theta,\phi)\, {e^{ikr}\over r}
+</e>
+where the scattering amplitude <m>f(\theta,\phi)</m> is:
+<e>
+f(\theta,\phi)= {4\pi^2 m\over\hbar^2} \braket{k{\bf\hat r}|T|{\bf k}}
+</e>
+The differential cross section <m>{\d\sigma\over\d\Omega}</m> is then:
+<e>
+{\d\sigma\over\d\Omega}= |f(\theta,\phi)|^2
+</e>
 </p>
 </section>

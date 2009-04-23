@@ -242,3 +242,47 @@ perturbation theory:
 </p>
 </section>
 </section>
+
+<section>
+    <title>Scattering Theory</title>
+<p>
+The incoming plane wave state is a solution of
+<e>H_0\ket{{\bf k}}=E_k\ket{{\bf k}}</e>
+with <m>H_0={p^2\over 2m}</m>. E.g.
+<e>\braket{{\bf r}|{\bf k}}=e^{i{\bf r}\cdot{\bf k}}</e>
+We want to solve:
+<e>(H_0+V)\ket{\psi}=E_k\ket{\psi}</e>
+The solution of this is:
+<e>\ket{\psi}=\ket{{\bf k}}+{1\over E_k-H_0}V\ket{\psi}
+    =\ket{\bf{k}}+GV\ket{\psi}</e>
+where <e>G={1\over E_k-H_0}</e> is the Green function for the Schr&ouml;dinger
+equation.  <m>G</m> is not unique, it contains both outgoing and ingoing waves.
+As it turns out, the outgoing waves can be chosen by moving the poles of the
+Green function a bit up:
+<e>G_+={1\over E_k-H_0+i\epsilon}</e>
+One can write this Green function in several different ways:
+<e>G_+={1\over E_k-H_0+i\epsilon}
+    =\int\d^3k' {\ket{{\bf k'}}\bra{\bf{k'}}\over E_k-E_{k'}+i\epsilon}</e>
+<e>G({\bf r}, {\bf r'}) = \braket{{\bf r}|G_+|{\bf r'}}=\bra{{\bf r}}{1\over
+    E_k-H_0+i\epsilon}\ket{{\bf r'}}=</e>
+<e>
+=\int\d^3k' {\braket{{\bf r}|{\bf k'}}\braket{\bf{k'}|\bf{r'}}\over E_k-E_{k'}+i\epsilon}
+=\int\d^3k' {e^{i{\bf k'}\cdot({\bf r}-{\bf r'})}\over E_k-E_{k'}+i\epsilon}
+={2m\over\hbar^2}\int\d^3k' {e^{i{\bf k'}\cdot({\bf r}-{\bf r'})}\over
+k^2-{k'}^2+i\epsilon}
+</e>
+Assuming <m>|{\bf r'}|\ll|{\bf r}|</m>, we can taylor expand
+<m>|{\bf r}-{\bf r'}|</m>:
+<e>|{\bf r}-{\bf r'}|
+=e^{-{\bf r'}\cdot\nabla}|{\bf r}|
+=\left(1-{\bf r'}\cdot\nabla+\left(-{\bf r'}\cdot\nabla\right)^2
++O\left(r'^3\right)
+\right)|{\bf r}|
+=|{\bf r}|-{\bf r'}\cdot\nabla|{\bf r}|+O\left(r'^2\right)
+=
+</e>
+<e>
+=r-{\bf r'}\cdot{\bf \hat r}+O\left(r'^2\right)
+</e>
+</p>
+</section>

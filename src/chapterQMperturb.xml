@@ -250,6 +250,7 @@ The incoming plane wave state is a solution of
 <e>H_0\ket{{\bf k}}=E_k\ket{{\bf k}}</e>
 with <m>H_0={p^2\over 2m}</m>. E.g.
 <e>\braket{{\bf r}|{\bf k}}=e^{i{\bf r}\cdot{\bf k}}</e>
+<e>E_k = {\hbar^2 k^2\over 2 m}</e>
 We want to solve:
 <e>(H_0+V)\ket{\psi}=E_k\ket{\psi}</e>
 The solution of this is:
@@ -257,7 +258,7 @@ The solution of this is:
     =\ket{\bf{k}}+GV\ket{\psi}</e>
 where <e>G={1\over E_k-H_0}</e> is the Green function for the Schr&ouml;dinger
 equation.  <m>G</m> is not unique, it contains both outgoing and ingoing waves.
-One can distinguish between these two by adding a small <m>i\epsilon</m> into
+As shown below, one can distinguish between these two by adding a small <m>i\epsilon</m> into
 the denominator, that moves the poles of the Green functions above and below
 the <m>x</m>-axis:
 <e>G_+={1\over E_k-H_0+i\epsilon}</e>

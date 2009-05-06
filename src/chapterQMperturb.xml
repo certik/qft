@@ -368,9 +368,46 @@ f(\theta,\phi)= {4\pi^2 m\over\hbar^2} \braket{k{\bf\hat r}|T|{\bf k}}
 = {4\pi^2 m\over\hbar^2} \braket{{\bf k'}|T|{\bf k}}
 </e>
 Where <m>{\bf k'}=k{\bf\hat r}</m> is the final momentum.
-The differential cross section <m>{\d\sigma\over\d\Omega}</m> is then:
+</p>
+<p>
+The differential cross section <m>{\d\sigma\over\d\Omega}</m> is defined as the
+probability to observe the scattered particle in a given state per solid angle,
+e.g. the scattered flux per unit of solid angle per incident flux:
 <e>
-{\d\sigma\over\d\Omega}= |f(\theta,\phi)|^2
+{\d\sigma\over\d\Omega}= {1\over|{\bf j}_i|}{\d n\over\d\Omega}
+= {r^2\over|{\bf j}_i|}{\d n\over r^2\d\Omega}
+= {r^2\over|{\bf j}_i|}{\d n\over \d S}
+= {r^2\over|{\bf j}_i|}\,{\bf j}_o\cdot {\bf n}
+= {r^2\over|{\bf j}_i|}\,{\bf j}_o\cdot {\bf \hat r}
+=
+</e>
+<e>
+= {r^2\over{\hbar k\over m}}\,{\hbar k\over m}\left({1\over r^2}
++{i\over k r^3}\right)|f(\theta, \phi)|^2
+= \left(1 +{i\over k r}\right)|f(\theta, \phi)|^2
+\to
+|f(\theta, \phi)|^2
+</e>
+where we used <m>|{\bf j}_i|={\hbar k\over m}</m> and
+<e>{\bf j}_o\cdot {\bf \hat r}
+={\hbar\over2 m i}\left(
+\psi^*\nabla\psi- \psi\nabla\psi^*
+\right)\cdot{\bf \hat r}
+={\hbar\over2 m i}\left(
+\psi^*{\partial\over\partial r}\psi- \psi{\partial\over\partial r}\psi^*
+\right)
+=
+</e>
+<e>
+={\hbar\over2 m i}\left(
+f^*(\theta, \phi){e^{-ikr}\over r}{\partial\over\partial r}
+\left(f(\theta, \phi){e^{ikr}\over r}\right)- f(\theta, \phi){e^{ikr}\over
+r}{\partial\over\partial r}\left(f^*(\theta, \phi){e^{-ikr}\over r}\right)
+\right)=
+</e>
+<e>
+={\hbar k\over m}\left({1\over r^2}+{i\over k r^3}
+\right)|f(\theta, \phi)|^2
 </e>
 Let's write the explicit formula for the transition matrix:
 <e>

@@ -135,4 +135,52 @@ and for the lower indices:
 </p>
 </section>
 
+<section>
+    <title>Multipole expansion</title>
+<p>
+<e>
+{1\over |{\bf r}-{\bf r'}|}
+={1\over \sqrt{({\bf r}-{\bf r'})^2}}
+={1\over \sqrt{r^2-2{\bf r}\cdot {\bf r'} + r'^2}}
+={1\over r\sqrt{1-2\left(r'\over r\right){\bf\hat r}\cdot {\bf\hat r'}
+   + \left(r'\over r\right)^2}}
+=
+</e>
+<e>
+={1\over r}\sum_{l=0}^\infty\left(r'\over r\right)^l
+P_l({\bf\hat r}\cdot {\bf\hat r'})
+=
+</e>
+<e>
+={1\over r}\left(
+P_0({\bf\hat r}\cdot {\bf\hat r'})
++ P_1({\bf\hat r}\cdot {\bf\hat r'}){r'\over r}
++ P_2({\bf\hat r}\cdot {\bf\hat r'})\left(r'\over r\right)^2
++ O\left(r'^3\over r^3\right)
+\right)
+=
+</e>
+<e>
+={1\over r}\left(
+1
++ {\bf\hat r}\cdot {\bf\hat r'} {r'\over r}
++ \half\left(3({\bf\hat r}\cdot {\bf\hat r'})^2-1\right)\left(r'\over r\right)^2
++ O\left(r'^3\over r^3\right)
+\right)
+=
+</e>
+<e>
+={1\over r}
++{{\bf r}\cdot {\bf r'}\over r^3}
++{3({\bf r}\cdot {\bf r'})^2-r^2r'^2\over 2r^5}
++ O\left(r'^3\over r^4\right)
+</e>
+We can also use the formula:
+<e>
+\sum_m \braket{{\bf\hat r}|lm}\braket{lm|{\bf\hat r}'}={4\pi\over 2l+1}
+\braket{{\bf\hat r}\cdot{\bf\hat r'}|P_l}
+</e>
+</p>
+</section>
+
 </section>

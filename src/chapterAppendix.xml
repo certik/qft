@@ -180,6 +180,19 @@ We can also use the formula:
 \sum_m \braket{{\bf\hat r}|lm}\braket{lm|{\bf\hat r}'}={4\pi\over 2l+1}
 \braket{{\bf\hat r}\cdot{\bf\hat r'}|P_l}
 </e>
+and rewrite the expansion using spherical harmonics:
+<e>
+{1\over |{\bf r}-{\bf r'}|}
+={1\over r}\sum_{l=0}^\infty\left(r'\over r\right)^l
+P_l({\bf\hat r}\cdot {\bf\hat r'})
+=
+</e>
+<e>
+={1\over r}\sum_{l,m}\left(r'\over r\right)^l
+{2l+1\over4\pi}\braket{{\bf\hat r}|lm}\braket{lm|{\bf\hat r}'}
+={1\over r}\sum_{l,m}\left(r'\over r\right)^l
+{2l+1\over4\pi}Y_{lm}({\bf\hat r})Y_{lm}^*({\bf\hat r}')
+</e>
 </p>
 </section>
 

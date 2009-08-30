@@ -311,7 +311,7 @@ Note: both functions may be divided by the factor <m>(2\pi)^3</m> due to the
 momentum integration.
 </p>
 <p>
-Let's get back to the solution to the Schr&ouml;dinger equation:
+Let's get back to the solution of the Schr&ouml;dinger equation:
 <e>\ket{\psi}=\ket{\bf{k}}+G_+V\ket{\psi}</e>
 It contains the solution <m>\ket{\psi}</m> on both sides of the equation, so we
 express it explicitly:
